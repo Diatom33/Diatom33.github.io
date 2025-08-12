@@ -28,10 +28,24 @@ jobs:
           node-version: '20'
           cache: 'npm'
       
-      - name: Install dependencies
+      - name: Create package.json and install dependencies
         run: |
-          npm init -y
-          npm install rss-parser@^3.13.0 fs-extra@^11.1.1
+            cat > package.json << 'EOF'
+            {
+            "name": "rss-feed-updater",
+            "version": "1.0.0",
+            "description": "RSS feed updater for GitHub Pages",
+            "main": "scripts/update-feed.js",
+            "scripts": {
+                "update-feed": "node scripts/update-feed.js"
+            },
+            "dependencies": {
+                "rss-parser": "^3.13.0",
+                "fs-extra": "^11.1.1"
+            }
+            }
+            EOF
+            npm install
       
       - name: Update RSS feed
         run: node scripts/update-feed.js
