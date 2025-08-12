@@ -13,13 +13,15 @@ const parser = new Parser({
 const RSS_FEEDS = [
     {
         url: process.env.RSS_FEED_1,
-        name: 'Feed 1',
-        category: 'Blog'
+        name: 'LessWrong',
+        category: 'LessWrong',
+        dateFilter: null // No date filtering
     },
     {
         url: process.env.RSS_FEED_2,
-        name: 'Feed 2',
-        category: 'News'
+        name: 'Newsletter',
+        category: 'Newsletter',
+        dateFilter: new Date('2025-05-01T00:00:00Z') // Only items after May 1, 2025
     }
 ];
 
@@ -39,26 +41,43 @@ async function fetchFeed(feedConfig) {
 
         const feed = await parser.parseURL(feedConfig.url);
 
+        let items = feed.items.map(item => ({
+            title: item.title,
+            link: item.link,
+            description: item.contentSnippet || item.content || '',
+            pubDate: item.pubDate,
+            isoDate: item.isoDate,
+            author: item.author || item.creator || 'Unknown',
+            guid: item.guid || item.link,
+            category: item.category || feedConfig.category,
+            source: feedConfig.name,
+            feedTitle: feed.title
+        }));
+
+        // Apply date filtering if specified
+        if (feedConfig.dateFilter) {
+            const filterDate = feedConfig.dateFilter;
+            items = items.filter(item => {
+                const itemDate = new Date(item.isoDate || item.pubDate);
+                const isAfterFilter = itemDate >= filterDate;
+                if (!isAfterFilter) {
+                    console.log(`Filtering out item "${item.title}" (${itemDate.toISOString()}) - before ${filterDate.toISOString()}`);
+                }
+                return isAfterFilter;
+            });
+            console.log(`Applied date filter for ${feedConfig.name}: ${items.length} items remain after filtering`);
+        }
+
         return {
             feedInfo: {
                 title: feed.title,
                 description: feed.description,
                 link: feed.link,
                 category: feedConfig.category,
-                name: feedConfig.name
+                name: feedConfig.name,
+                dateFilter: feedConfig.dateFilter ? feedConfig.dateFilter.toISOString() : null
             },
-            items: feed.items.map(item => ({
-                title: item.title,
-                link: item.link,
-                description: item.contentSnippet || item.content || '',
-                pubDate: item.pubDate,
-                isoDate: item.isoDate,
-                author: item.author || item.creator || 'Unknown',
-                guid: item.guid || item.link,
-                category: item.category || feedConfig.category,
-                source: feedConfig.name,
-                feedTitle: feed.title
-            }))
+            items: items
         };
     } catch (error) {
         console.error(`Error fetching feed ${feedConfig.name}:`, error.message);
@@ -68,7 +87,8 @@ async function fetchFeed(feedConfig) {
                 description: 'Failed to fetch feed',
                 link: feedConfig.url,
                 category: feedConfig.category,
-                name: feedConfig.name
+                name: feedConfig.name,
+                dateFilter: feedConfig.dateFilter ? feedConfig.dateFilter.toISOString() : null
             },
             items: []
         };
