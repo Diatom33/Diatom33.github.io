@@ -26,26 +26,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
       
-      - name: Create package.json and install dependencies
+      - name: Install dependencies directly
         run: |
-            cat > package.json << 'EOF'
-            {
-            "name": "rss-feed-updater",
-            "version": "1.0.0",
-            "description": "RSS feed updater for GitHub Pages",
-            "main": "scripts/update-feed.js",
-            "scripts": {
-                "update-feed": "node scripts/update-feed.js"
-            },
-            "dependencies": {
-                "rss-parser": "^3.13.0",
-                "fs-extra": "^11.1.1"
-            }
-            }
-            EOF
-            npm install
+          npm install --no-package-lock --no-save rss-parser@^3.13.0 fs-extra@^11.1.1
       
       - name: Update RSS feed
         run: node scripts/update-feed.js
@@ -65,7 +50,7 @@ jobs:
             exit 0
           fi
           
-          git add data/feed.json
+          git add data/feed.json data/feed.xml
           git commit -m "🤖 Update RSS feed - $(date +'%Y-%m-%d %H:%M UTC')"
           git push
         continue-on-error: true
