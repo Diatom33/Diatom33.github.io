@@ -1,0 +1,65 @@
+name: Update RSS Feed
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    paths:
+      - '.github/workflows/update-rss.yml'
+      - 'scripts/update-feed.js'
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write # Required to commit changes back to the repo
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install rss-parser@^3.13.0 fs-extra@^11.1.1
+      
+      - name: Update RSS feed
+        run: node scripts/update-feed.js
+        env:
+          RSS_FEED_1: ${{ 'https://www.greaterwrong.com/users/alice-blair?show=posts&format=rss' }}
+          RSS_FEED_2: ${{ 'https://newsletter.mlsafety.org/feed' }}
+          MAX_ITEMS: ${{ '10' }}
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if there are changes to commit
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git add data/feed.json
+          git commit -m "🤖 Update RSS feed - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+        continue-on-error: true
+      
+      - name: Update GitHub Pages (if enabled)
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          keep_files: true

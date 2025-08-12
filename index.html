@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Blair</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --card-bg: #f8f9fa;
+            --border-color: #e9ecef;
+            --link-color: #0366d6;
+            --link-hover: #0256cc;
+            --accent-color: #6f42c1;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0d1117;
+            --text-color: #f0f6fc;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --link-color: #58a6ff;
+            --link-hover: #79c0ff;
+            --accent-color: #8b5cf6;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .personal-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .personal-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .personal-links a:hover {
+            color: var(--link-hover);
+            border-color: var(--link-color);
+            background-color: var(--card-bg);
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .bio-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .bio-section h1 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .bio-section h2 {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .feed-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .feed-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feed-meta-info {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .refresh-button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .refresh-button:hover {
+            opacity: 0.8;
+        }
+
+        .feed-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .feed-item:last-child {
+            border-bottom: none;
+        }
+
+        .feed-item h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .feed-item h4 a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .feed-item h4 a:hover {
+            color: var(--link-color);
+        }
+
+        .feed-description {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .feed-meta {
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 0.9rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .feed-source {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .coverage-section {
+            grid-column: 1 / -1;
+            margin-top: 2rem;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .coverage-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .coverage-item {
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-color);
+            transition: all 0.2s ease;
+        }
+
+        .coverage-item:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-2px);
+        }
+
+        .coverage-item h4 a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .coverage-item h4 a:hover {
+            color: var(--link-color);
+        }
+
+        .coverage-item p {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .loading {
+            text-align: center;
+            color: var(--text-color);
+            opacity: 0.7;
+            padding: 2rem;
+        }
+
+        .error {
+            text-align: center;
+            color: #dc3545;
+            padding: 1rem;
+            background: rgba(220, 53, 69, 0.1);
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .personal-links {
+                justify-content: center;
+            }
+
+            .bio-section h1 {
+                font-size: 2rem;
+            }
+
+            .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feed-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="personal-links">
+                <a href="https://linkedin.com/in/alice-blair" target="_blank">LinkedIn</a>
+                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">Blog</a>
+                <a href="https://github.com/Diatom33" target="_blank">GitHub</a>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+        </header>
+
+        <main class="main-content">
+            <section class="bio-section">
+                <h1>Alice Blair</h1>
+                <h2>Technical Writer</h2>
+                <div class="bio-text">
+                    <p>bio placeholder</p>
+                </div>
+            </section>
+
+            <section class="feed-section">
+                <h3>Latest Writing</h3>
+                <div class="feed-meta-info">
+                    <span id="last-updated">Loading...</span>
+                    <button class="refresh-button" onclick="loadRSSFeed()">Refresh</button>
+                </div>
+                <div id="rss-feed">
+                    <div class="loading">Loading Writing...</div>
+                </div>
+            </section>
+        </main>
+
+        <section class="coverage-section">
+            <h3>Additional Coverage & Links</h3>
+            <div class="coverage-grid">
+                <div class="coverage-item">
+                    <h4><a href="https://example.com/article1" target="_blank">Featured Article Title</a></h4>
+                    <p>Placeholder coverage</p>
+                </div>
+                <div class="coverage-item">
+                    <h4><a href="https://example.com/podcast" target="_blank">Podcast Appearance</a></h4>
+                    <p>Placeholder coverage</p>
+                </div>
+                <div class="coverage-item">
+                    <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
+                    <p>Placeholder coverage</p>
+                </div>
+                <div class="coverage-item">
+                    <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
+                    <p>Placeholder coverage</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+
+            // Store preference
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme preference
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+
+        // Format date for display
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+
+        // Truncate description text
+        function truncateText(text, maxLength = 150) {
+            if (!text) return '';
+            if (text.length <= maxLength) return text;
+            return text.substring(0, maxLength).trim() + '...';
+        }
+
+        // Load RSS feed from GitHub Actions generated JSON
+        async function loadRSSFeed() {
+            const feedContainer = document.getElementById('rss-feed');
+            const lastUpdatedElement = document.getElementById('last-updated');
+
+            try {
+                // Try to fetch the generated feed data
+                const response = await fetch('./data/feed.json');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const feedData = await response.json();
+
+                // Update last updated timestamp
+                if (feedData.meta && feedData.meta.lastUpdated) {
+                    lastUpdatedElement.textContent = `Updated: ${formatDate(feedData.meta.lastUpdated)}`;
+                }
+
+                if (!feedData.items || feedData.items.length === 0) {
+                    feedContainer.innerHTML = '<div class="error">No feed items available</div>';
+                    return;
+                }
+
+                // Generate feed HTML
+                const feedHTML = feedData.items.map(item => `
+                    <div class="feed-item">
+                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                        ${item.description ? `<div class="feed-description">${truncateText(item.description)}</div>` : ''}
+                        <div class="feed-meta">
+                            <span class="feed-source">${item.source || item.category || 'Unknown'}</span>
+                            <span>${formatDate(item.isoDate || item.pubDate)}</span>
+                            ${item.author && item.author !== 'Unknown' ? `<span>by ${item.author}</span>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+
+                feedContainer.innerHTML = feedHTML;
+
+            } catch (error) {
+                console.error('Error loading RSS feed:', error);
+
+                // Fallback to example data
+                lastUpdatedElement.textContent = 'Using example data';
+                feedContainer.innerHTML = `
+                    <div class="error">Could not load live feed. Showing example data.</div>
+                    ${getExampleFeedHTML()}
+                `;
+            }
+        }
+
+        // Generate example feed HTML
+        function getExampleFeedHTML() {
+            const exampleItems = [
+                {
+                    title: "Latest Project Update: New Feature Release",
+                    link: "https://yourblog.com/post1",
+                    description: "Exciting new features have been added to the project, improving user experience and performance.",
+                    source: "Blog",
+                    pubDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+                    author: "Your Name"
+                },
+                {
+                    title: "Speaking at Tech Conference 2025",
+                    link: "https://conference.com/speaker/you",
+                    description: "Excited to announce my upcoming speaking engagement at the annual tech conference.",
+                    source: "Events",
+                    pubDate: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+                    author: "Conference Team"
+                },
+                {
+                    title: "Open Source Contribution Milestone",
+                    link: "https://github.com/project/milestone",
+                    description: "Reached an important milestone in open source contributions with the latest pull request.",
+                    source: "GitHub",
+                    pubDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+                    author: "Your Name"
+                }
+            ];
+
+            return exampleItems.map(item => `
+                <div class="feed-item">
+                    <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                    <div class="feed-description">${item.description}</div>
+                    <div class="feed-meta">
+                        <span class="feed-source">${item.source}</span>
+                        <span>${formatDate(item.pubDate)}</span>
+                        <span>by ${item.author}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            loadTheme();
+            loadRSSFeed();
+        });
+    </script>
+</body>
+
+</html>
