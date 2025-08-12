@@ -44,14 +44,18 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
+          # Ensure data directory exists and add files
+          mkdir -p data
+          
           # Check if there are changes to commit
-          if git diff --quiet && git diff --cached --quiet; then
+          git add data/
+          
+          if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
           
-          git add data/feed.json data/feed.xml
-          git commit -m "🤖 Update RSS feed - $(date +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "Update RSS feed - $(date +'%Y-%m-%d %H:%M UTC')"
           git push
         continue-on-error: true
       
