@@ -51,11 +51,12 @@
 
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin-bottom: 3rem;
             flex-wrap: wrap;
             gap: 1rem;
+            position: relative;
         }
 
         .personal-links {
@@ -63,6 +64,7 @@
             gap: 1.5rem;
             align-items: center;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .personal-links a {
@@ -73,6 +75,19 @@
             border-radius: 6px;
             border: 1px solid var(--border-color);
             transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .link-icon {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+        }
+
+        [data-theme="dark"] .link-icon {
+            filter: brightness(0) saturate(100%) invert(64%) sepia(88%) saturate(3592%) hue-rotate(200deg) brightness(119%) contrast(119%);
         }
 
         .personal-links a:hover {
@@ -90,17 +105,14 @@
             cursor: pointer;
             font-size: 0.9rem;
             transition: all 0.2s ease;
+            position: absolute;
+            right: 0;
+            min-width: 120px;
+            text-align: center;
         }
 
         .theme-toggle:hover {
             background-color: var(--border-color);
-        }
-
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
         }
 
         .bio-section {
@@ -109,6 +121,15 @@
             border-radius: 12px;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
         }
 
         .bio-section h1 {
@@ -160,20 +181,6 @@
             align-items: center;
         }
 
-        .refresh-button {
-            background: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: opacity 0.2s ease;
-        }
-
-        .refresh-button:hover {
-            opacity: 0.8;
-        }
 
         .feed-item {
             padding: 1rem 0;
@@ -227,8 +234,6 @@
         }
 
         .coverage-section {
-            grid-column: 1 / -1;
-            margin-top: 2rem;
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 12px;
@@ -308,7 +313,12 @@
 
             .header {
                 flex-direction: column;
-                align-items: stretch;
+                align-items: center;
+            }
+
+            .theme-toggle {
+                position: static;
+                margin-top: 1rem;
             }
 
             .personal-links {
@@ -320,6 +330,10 @@
             }
 
             .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-content {
                 grid-template-columns: 1fr;
             }
 
@@ -336,55 +350,76 @@
     <div class="container">
         <header class="header">
             <nav class="personal-links">
-                <a href="https://linkedin.com/in/alice-blair" target="_blank">LinkedIn</a>
-                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">LessWrong</a>
-                <a href="https://github.com/Diatom33" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/alice-blair" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"
+                        class="link-icon">
+                    LinkedIn
+                </a>
+                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">
+                    <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1497915096/favicon_lncumn.svg"
+                        alt="LessWrong" class="link-icon">
+                    LessWrong
+                </a>
+                <a href="https://github.com/Diatom33" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"
+                        class="link-icon">
+                    GitHub
+                </a>
             </nav>
-            <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+            <button class="theme-toggle" onclick="toggleTheme()">☀️ Light Mode</button>
         </header>
 
-        <main class="main-content">
-            <section class="bio-section">
-                <h1>Alice Blair</h1>
-                <h2>Technical Writer, AI Safety</h2>
-                <div class="bio-text">
-                    <p>bio placeholder</p>
-                </div>
-            </section>
+        <section class="bio-section">
+            <h1>Alice Blair</h1>
+            <h2>Technical Writer, AI Safety</h2>
+            <div class="bio-text">
+                <p>I'm Alice, a technical AI safety writer. I write the <a href="https://newsletter.mlsafety.org"
+                        target="_blank">ML Safety Newsletter</a> and my personal writing is on <a
+                        href="https://www.lesswrong.com/users/alice-blair" target="_blank">LessWrong</a>. I have a
+                    background in technical ML, but pivoted to communications because I think this is where I can do the
+                    most good.</p>
+            </div>
+        </section>
 
+        <main class="main-content">
             <section class="feed-section">
                 <h3>Latest Writing</h3>
                 <div class="feed-meta-info">
                     <span id="last-updated">Loading...</span>
-                    <button class="refresh-button" onclick="loadRSSFeed()">Refresh</button>
                 </div>
                 <div id="rss-feed">
                     <div class="loading">Loading Writing...</div>
                 </div>
             </section>
-        </main>
 
-        <section class="coverage-section">
-            <h3>Additional Coverage & Links</h3>
-            <div class="coverage-grid">
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/article1" target="_blank">Featured Article Title</a></h4>
-                    <p>Placeholder coverage</p>
+            <section class="coverage-section">
+                <h3>Additional Coverage & Links</h3>
+                <div class="coverage-grid">
+                    <div class="coverage-item">
+                        <h4><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
+                                target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT Students
+                                To Drop Out</a></h4>
+                        <p>I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was
+                            featured on the front page of Forbes and received over 100,000 views in the first week.</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4><a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
+                                target="_blank">CAIP Demo Day</a></h4>
+                        <p>I presented to tens of congressional staffers in DC about the risks of strategic deception in
+                            AI. This was part of an event with the <a href="https://www.centeraipolicy.org/"
+                                target="_blank">Center for AI Policy</a>.</p>
+                    </div>
+                    <!-- <div class="coverage-item">
+                        <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div> -->
                 </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/podcast" target="_blank">Podcast Appearance</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
 
     <script>
@@ -412,13 +447,8 @@
         // Update theme button text
         function updateThemeButton(theme) {
             const button = document.querySelector('.theme-toggle');
-            if (localStorage.getItem('theme')) {
-                // Manual override
-                button.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-            } else {
-                // Following system preference
-                button.textContent = 'Sync with System';
-            }
+            // Always show current mode instead of next action
+            button.textContent = theme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode';
         }
 
         // Load saved theme preference or use system preference
