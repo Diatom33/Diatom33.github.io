@@ -41,18 +41,39 @@ async function fetchFeed(feedConfig) {
 
         const feed = await parser.parseURL(feedConfig.url);
 
-        let items = feed.items.map(item => ({
-            title: item.title,
-            link: item.link,
-            description: item.contentSnippet || item.content || '',
-            pubDate: item.pubDate,
-            isoDate: item.isoDate,
-            author: item.author || item.creator || 'Unknown',
-            guid: item.guid || item.link,
-            category: item.category || feedConfig.category,
-            source: feedConfig.name,
-            feedTitle: feed.title
-        }));
+        // Transform GreaterWrong links to LessWrong links and clean up titles
+        let items = feed.items.map(item => {
+            const originalLink = item.link;
+            const originalGuid = item.guid || item.link;
+
+            const transformedLink = originalLink ? originalLink.replace(/greaterwrong\.com/g, 'lesswrong.com') : originalLink;
+            const transformedGuid = originalGuid ? originalGuid.replace(/greaterwrong\.com/g, 'lesswrong.com') : originalGuid;
+
+            // Clean up title by removing trailing "by Alice Blair"
+            let cleanedTitle = item.title;
+            if (cleanedTitle && cleanedTitle.endsWith(' by Alice Blair')) {
+                cleanedTitle = cleanedTitle.replace(/ by Alice Blair$/, '');
+                console.log(`Cleaned title: "${item.title}" -> "${cleanedTitle}"`);
+            }
+
+            // Log link transformations for debugging
+            if (originalLink && originalLink !== transformedLink) {
+                console.log(`Transformed link: ${originalLink} -> ${transformedLink}`);
+            }
+
+            return {
+                title: cleanedTitle,
+                link: transformedLink,
+                description: item.contentSnippet || item.content || '',
+                pubDate: item.pubDate,
+                isoDate: item.isoDate,
+                author: item.author || item.creator || 'Unknown',
+                guid: transformedGuid,
+                category: item.category || feedConfig.category,
+                source: feedConfig.name,
+                feedTitle: feed.title
+            };
+        });
 
         // Apply date filtering if specified
         if (feedConfig.dateFilter) {
