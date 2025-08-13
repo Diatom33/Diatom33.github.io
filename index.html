@@ -63,6 +63,8 @@
             gap: 1.5rem;
             align-items: center;
             flex-wrap: wrap;
+            justify-content: center;
+            flex: 1;
         }
 
         .personal-links a {
@@ -73,6 +75,19 @@
             border-radius: 6px;
             border: 1px solid var(--border-color);
             transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .link-icon {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+        }
+
+        [data-theme="dark"] .link-icon {
+            filter: brightness(0) saturate(100%) invert(64%) sepia(88%) saturate(3592%) hue-rotate(200deg) brightness(119%) contrast(119%);
         }
 
         .personal-links a:hover {
@@ -96,19 +111,21 @@
             background-color: var(--border-color);
         }
 
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-
         .bio-section {
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
             border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
         }
 
         .bio-section h1 {
@@ -160,20 +177,6 @@
             align-items: center;
         }
 
-        .refresh-button {
-            background: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: opacity 0.2s ease;
-        }
-
-        .refresh-button:hover {
-            opacity: 0.8;
-        }
 
         .feed-item {
             padding: 1rem 0;
@@ -227,8 +230,6 @@
         }
 
         .coverage-section {
-            grid-column: 1 / -1;
-            margin-top: 2rem;
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 12px;
@@ -323,6 +324,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
             .feed-meta {
                 flex-direction: column;
                 align-items: flex-start;
@@ -336,55 +341,63 @@
     <div class="container">
         <header class="header">
             <nav class="personal-links">
-                <a href="https://linkedin.com/in/alice-blair" target="_blank">LinkedIn</a>
-                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">LessWrong</a>
-                <a href="https://github.com/Diatom33" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/alice-blair" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="link-icon">
+                    LinkedIn
+                </a>
+                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">
+                    <img src="https://www.lesswrong.com/icons/favicon-32x32.png" alt="LessWrong" class="link-icon">
+                    LessWrong
+                </a>
+                <a href="https://github.com/Diatom33" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="link-icon">
+                    GitHub
+                </a>
             </nav>
-            <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+            <button class="theme-toggle" onclick="toggleTheme()">☀️ Light Mode</button>
         </header>
 
-        <main class="main-content">
-            <section class="bio-section">
-                <h1>Alice Blair</h1>
-                <h2>Technical Writer, AI Safety</h2>
-                <div class="bio-text">
-                    <p>bio placeholder</p>
-                </div>
-            </section>
+        <section class="bio-section">
+            <h1>Alice Blair</h1>
+            <h2>Technical Writer, AI Safety</h2>
+            <div class="bio-text">
+                <p>bio placeholder</p>
+            </div>
+        </section>
 
+        <main class="main-content">
             <section class="feed-section">
                 <h3>Latest Writing</h3>
                 <div class="feed-meta-info">
                     <span id="last-updated">Loading...</span>
-                    <button class="refresh-button" onclick="loadRSSFeed()">Refresh</button>
                 </div>
                 <div id="rss-feed">
                     <div class="loading">Loading Writing...</div>
                 </div>
             </section>
-        </main>
 
-        <section class="coverage-section">
-            <h3>Additional Coverage & Links</h3>
-            <div class="coverage-grid">
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/article1" target="_blank">Featured Article Title</a></h4>
-                    <p>Placeholder coverage</p>
+            <section class="coverage-section">
+                <h3>Additional Coverage & Links</h3>
+                <div class="coverage-grid">
+                    <div class="coverage-item">
+                        <h4><a href="https://example.com/article1" target="_blank">Featured Article Title</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4><a href="https://example.com/podcast" target="_blank">Podcast Appearance</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div>
+                    <div class="coverage-item">
+                        <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
+                        <p>Placeholder coverage</p>
+                    </div>
                 </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/podcast" target="_blank">Podcast Appearance</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-                <div class="coverage-item">
-                    <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
-                    <p>Placeholder coverage</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
 
     <script>
@@ -412,13 +425,8 @@
         // Update theme button text
         function updateThemeButton(theme) {
             const button = document.querySelector('.theme-toggle');
-            if (localStorage.getItem('theme')) {
-                // Manual override
-                button.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
-            } else {
-                // Following system preference
-                button.textContent = 'Sync with System';
-            }
+            // Always show current mode instead of next action
+            button.textContent = theme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode';
         }
 
         // Load saved theme preference or use system preference
