@@ -3,12 +3,12 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Wed, 13 Aug 2025 01:23:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 13 Aug 2025 03:15:28 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
     <item>
-      <title><![CDATA[Listening Before Speaking by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/HT7wTWNdtqmiJ4veE/listening-before-speaking</link>
+      <title><![CDATA[Listening Before Speaking]]></title>
+      <link>https://www.lesswrong.com/posts/HT7wTWNdtqmiJ4veE/listening-before-speaking</link>
       <description><![CDATA[Epistemic Sta­tus: anec­data and intuition
 ed­ited GPTl;dr: For so­cially trans­mit­table skills that re­quire learn­ing lots of new cat­e­gory bound­aries (lan­guages, sub­cul­tures, etc.), a de­liber­ate in­put-heavy out­put-light phase at the be­gin­ning re­duces fos­silized er­rors and speeds later fluency.
 Lan­guage Learning
@@ -19,8 +19,8 @@ A friend of mine, let’s call him Bob, learned English out­side of his crit­i
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Notes from Dopamine Detoxing by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/BeXGMt7gmGFXFerMC/notes-from-dopamine-detoxing</link>
+      <title><![CDATA[Notes from Dopamine Detoxing]]></title>
+      <link>https://www.lesswrong.com/posts/BeXGMt7gmGFXFerMC/notes-from-dopamine-detoxing</link>
       <description><![CDATA[[Epistemic sta­tus: I’m not a neu­ro­scien­tist nor any kind of med­i­cal nor biolog­i­cal pro­fes­sional. I have an am­a­teur un­der­stand­ing of neu­ro­chem­istry and cog­ni­tive sci­ence. This post is pri­mar­ily based on what has worked for me and my in­tu­itions around why. I err on the side of epistemic trans­parency and cau­tion where pos­si­ble.]
 Pr­ereq­ui­site Con­cept: He­donic Set Point
 Dis­claimers/​Warnings
@@ -31,8 +31,8 @@ I think this can be a gen­uinely very use­ful tech­nique for peo­ple. How­e
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Moral Obligation and Moral Opportunity by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/AmwgNS3ybwF8Eovho/moral-obligation-and-moral-opportunity</link>
+      <title><![CDATA[Moral Obligation and Moral Opportunity]]></title>
+      <link>https://www.lesswrong.com/posts/AmwgNS3ybwF8Eovho/moral-obligation-and-moral-opportunity</link>
       <description><![CDATA[This con­cept and ter­minol­ogy was spawned out of a con­ver­sa­tion a few years ago with my friend Skyler. I fi­nally de­cided to write it up. Any mis­takes here are my own.
 
 Every once in a while, I find my­self at yet an­other ra­tio­nal­ist/​EA/​what­ever-ad­ja­cent so­cial event. In­vari­ably, some­one walks up to me:
@@ -55,8 +55,8 @@ Hi Bob, I’m Alice. I work on pre­vent­ing hu­man ex­tinc­tion from ad­va
       <source>Newsletter</source>
     </item>
     <item>
-      <title><![CDATA[Reflections on Neuralese by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese</link>
+      <title><![CDATA[Reflections on Neuralese]]></title>
+      <link>https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese</link>
       <description><![CDATA[.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
 .MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
 .mjx-chtml[tabin...]]></description>
@@ -66,8 +66,8 @@ Hi Bob, I’m Alice. I work on pre­vent­ing hu­man ex­tinc­tion from ad­va
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Cautions about LLMs in Human Cognitive Loops by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/apCnFyXJamoSkHcE4/cautions-about-llms-in-human-cognitive-loops</link>
+      <title><![CDATA[Cautions about LLMs in Human Cognitive Loops]]></title>
+      <link>https://www.lesswrong.com/posts/apCnFyXJamoSkHcE4/cautions-about-llms-in-human-cognitive-loops</link>
       <description><![CDATA[soft pre­req­ui­site: skim­ming through How it feels to have your mind hacked by an AI un­til you get the gen­eral point. I’ll try to make this post read­able as a stan­dalone, but you may get more value out of it if you read the linked post.
 Thanks to Claude 3.7 Son­net for giv­ing feed­back on a late draft of this post. All words here are my own writ­ing. Cau­tion was ex­er­cised in in­te­grat­ing Claude’s sug­ges­tions, as is the­matic.
 Many peo­ple right now are think­ing about the hard skil...]]></description>
@@ -77,8 +77,8 @@ Many peo­ple right now are think­ing about the hard skil...]]></description>
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Absorbing Your Friends’ Powers by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers</link>
+      <title><![CDATA[Absorbing Your Friends’ Powers]]></title>
+      <link>https://www.lesswrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers</link>
       <description><![CDATA[Motivation
 
 Richard Ham­ming was a math­e­mat­i­cian who worked at Bell Labs dur­ing the 1940s-1970s. He had a habit of sit­ting down with sci­en­tists in other fields and ask­ing them “What are the im­por­tant prob­lems of your field?” After they ex­plained their field’s most im­por­tant open prob­lem, he would ask them: why aren’t you work­ing on that?
@@ -93,8 +93,8 @@ Who is the most ski...]]></description>
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Alice Blair’s Shortform by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform</link>
+      <title><![CDATA[Alice Blair’s Shortform]]></title>
+      <link>https://www.lesswrong.com/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform</link>
       <description><![CDATA[...]]></description>
       <pubDate>Mon, 27 Jan 2025 23:25:10 GMT</pubDate>
       <guid>eukutrwGBPutoQoyM</guid>
@@ -102,8 +102,8 @@ Who is the most ski...]]></description>
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[AI Strategy Updates that You Should Make by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/mZH23GpAAW8jS782a/ai-strategy-updates-that-you-should-make</link>
+      <title><![CDATA[AI Strategy Updates that You Should Make]]></title>
+      <link>https://www.lesswrong.com/posts/mZH23GpAAW8jS782a/ai-strategy-updates-that-you-should-make</link>
       <description><![CDATA[.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
 .MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
 .mjx-chtml[tabin...]]></description>
@@ -113,8 +113,8 @@ Who is the most ski...]]></description>
       <source>LessWrong</source>
     </item>
     <item>
-      <title><![CDATA[Governance Course—Week 1 Reflections by Alice Blair]]></title>
-      <link>https://www.greaterwrong.com/posts/MmkFARsEEQaEEuayu/governance-course-week-1-reflections</link>
+      <title><![CDATA[Governance Course—Week 1 Reflections]]></title>
+      <link>https://www.lesswrong.com/posts/MmkFARsEEQaEEuayu/governance-course-week-1-reflections</link>
       <description><![CDATA[[Epistemic sta­tus: I’m try­ing to make my think­ing leg­ible to my­self and oth­ers, rather than try­ing to com­pose some­thing highly pol­ished here. I think I have good rea­sons for say­ing what I say and will try to cite sources where pos­si­ble, but nonethe­less take it with some grains of salt. As with my last post, I am low­er­ing my stan­dards so that this post gets out at all.]
 I’m work­ing my way through Har­vard’s AI safety club (AISST)’s mod­ified ver­sion of the BlueDot Im­pact AI G...]]></description>
       <pubDate>Thu, 09 Jan 2025 04:48:27 GMT</pubDate>

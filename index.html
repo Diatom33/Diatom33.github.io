@@ -337,7 +337,7 @@
         <header class="header">
             <nav class="personal-links">
                 <a href="https://linkedin.com/in/alice-blair" target="_blank">LinkedIn</a>
-                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">Blog</a>
+                <a href="https://www.lesswrong.com/users/alice-blair" target="_blank">LessWrong</a>
                 <a href="https://github.com/Diatom33" target="_blank">GitHub</a>
             </nav>
             <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
@@ -346,7 +346,7 @@
         <main class="main-content">
             <section class="bio-section">
                 <h1>Alice Blair</h1>
-                <h2>Technical Writer</h2>
+                <h2>Technical Writer, AI Safety</h2>
                 <div class="bio-text">
                     <p>bio placeholder</p>
                 </div>
@@ -388,27 +388,68 @@
     </div>
 
     <script>
+        // Get system theme preference
+        function getSystemTheme() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
         // Theme toggle functionality
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
             document.documentElement.setAttribute('data-theme', newTheme);
+            updateThemeButton(newTheme);
 
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
-
-            // Store preference
-            localStorage.setItem('theme', newTheme);
+            // Store preference (null means use system preference)
+            if (newTheme === getSystemTheme()) {
+                localStorage.removeItem('theme');
+            } else {
+                localStorage.setItem('theme', newTheme);
+            }
         }
 
-        // Load saved theme preference
-        function loadTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-
+        // Update theme button text
+        function updateThemeButton(theme) {
             const button = document.querySelector('.theme-toggle');
-            button.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+            if (localStorage.getItem('theme')) {
+                // Manual override
+                button.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+            } else {
+                // Following system preference
+                button.textContent = 'Sync with System';
+            }
+        }
+
+        // Load saved theme preference or use system preference
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            let theme;
+
+            if (savedTheme) {
+                // Use saved preference
+                theme = savedTheme;
+            } else {
+                // Use system preference
+                theme = getSystemTheme();
+            }
+
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeButton(theme);
+        }
+
+        // Listen for system theme changes
+        function setupSystemThemeListener() {
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+            mediaQuery.addEventListener('change', (e) => {
+                // Only update if user hasn't manually set a preference
+                if (!localStorage.getItem('theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    updateThemeButton(newTheme);
+                }
+            });
         }
 
         // Format date for display
@@ -525,6 +566,7 @@
         // Initialize the page
         document.addEventListener('DOMContentLoaded', function () {
             loadTheme();
+            setupSystemThemeListener();
             loadRSSFeed();
         });
     </script>
