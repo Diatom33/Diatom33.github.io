@@ -3,9 +3,20 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 18 Aug 2025 01:28:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 06:29:42 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Handing People Puzzles]]></title>
+      <link>https://www.lesswrong.com/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles</link>
+      <description><![CDATA[We’re a com­mu­nity that is es­pe­cially vuln­er­a­ble to nerd sniping, as com­mu­ni­ties go. I’m fond of par­tak­ing in a lit­tle nerd sniping my­self. While the origi­nal xkcd paints this pas­time in a mal­i­cious light, I ar­gue that this is in fact a great thing in gen­eral. One of my fa­vorite ways to do this, and one that I think the ra­tio­nal­ist com­mu­nity is ne­glect­ing, in Hand­ing Peo­ple Puz­zles. 
+At Meetups
+I once spent a few weeks go­ing to var­i­ous ra­tio­nal­ist mee­tups in ...]]></description>
+      <pubDate>Mon, 18 Aug 2025 06:27:58 GMT</pubDate>
+      <guid>xRZfpYkC9MwqG4tKi</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[Listening Before Speaking]]></title>
       <link>https://www.lesswrong.com/posts/HT7wTWNdtqmiJ4veE/listening-before-speaking</link>
@@ -109,16 +120,6 @@ Who is the most ski...]]></description>
 .mjx-chtml[tabin...]]></description>
       <pubDate>Mon, 27 Jan 2025 21:10:41 GMT</pubDate>
       <guid>mZH23GpAAW8jS782a</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Governance Course—Week 1 Reflections]]></title>
-      <link>https://www.lesswrong.com/posts/MmkFARsEEQaEEuayu/governance-course-week-1-reflections</link>
-      <description><![CDATA[[Epistemic sta­tus: I’m try­ing to make my think­ing leg­ible to my­self and oth­ers, rather than try­ing to com­pose some­thing highly pol­ished here. I think I have good rea­sons for say­ing what I say and will try to cite sources where pos­si­ble, but nonethe­less take it with some grains of salt. As with my last post, I am low­er­ing my stan­dards so that this post gets out at all.]
-I’m work­ing my way through Har­vard’s AI safety club (AISST)’s mod­ified ver­sion of the BlueDot Im­pact AI G...]]></description>
-      <pubDate>Thu, 09 Jan 2025 04:48:27 GMT</pubDate>
-      <guid>MmkFARsEEQaEEuayu</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
