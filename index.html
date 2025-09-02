@@ -153,6 +153,16 @@
             margin-bottom: 1.5rem;
         }
 
+        .bio-text a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .bio-text a:hover {
+            color: var(--link-hover);
+        }
+
         .feed-section {
             background: var(--card-bg);
             padding: 2rem;
@@ -197,7 +207,7 @@
 
         .feed-item h4 a {
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: underline;
             font-size: 1rem;
             font-weight: 600;
         }
@@ -268,7 +278,7 @@
 
         .coverage-item h4 a {
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: underline;
             font-weight: 600;
             margin-bottom: 0.5rem;
             display: block;
@@ -283,6 +293,16 @@
             opacity: 0.8;
             font-size: 0.9rem;
             line-height: 1.5;
+        }
+
+        .coverage-item p a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .coverage-item p a:hover {
+            color: var(--link-hover);
         }
 
         .loading {
@@ -360,13 +380,18 @@
                         alt="LessWrong" class="link-icon">
                     LessWrong
                 </a>
+                <a href="https://substack.com/@aliceblair2" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/substack.svg" alt="Substack"
+                        class="link-icon">
+                    Substack
+                </a>
                 <a href="https://github.com/Diatom33" target="_blank">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"
                         class="link-icon">
                     GitHub
                 </a>
             </nav>
-            <button class="theme-toggle" onclick="toggleTheme()">☀️ Light Mode</button>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
         </header>
 
         <section class="bio-section">
@@ -382,22 +407,14 @@
         </section>
 
         <main class="main-content">
-            <section class="feed-section">
-                <h3>Latest Writing</h3>
-                <div class="feed-meta-info">
-                    <span id="last-updated">Loading...</span>
-                </div>
-                <div id="rss-feed">
-                    <div class="loading">Loading Writing...</div>
-                </div>
-            </section>
 
             <section class="coverage-section">
                 <h3>Additional Coverage & Links</h3>
                 <div class="coverage-grid">
                     <div class="coverage-item">
                         <h4><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
-                                target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT Students
+                                target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
+                                Students
                                 To Drop Out</a></h4>
                         <p>I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was
                             featured on the front page of Forbes and received over 100,000 views in the first week.</p>
@@ -409,7 +426,17 @@
                             AI. This was part of an event with the <a href="https://www.centeraipolicy.org/"
                                 target="_blank">Center for AI Policy</a>.</p>
                     </div>
-                    <!-- <div class="coverage-item">
+                </div>
+                <section class="feed-section">
+                    <h3>Latest Writing</h3>
+                    <div class="feed-meta-info">
+                        <span id="last-updated">Loading...</span>
+                    </div>
+                    <div id="rss-feed">
+                        <div class="loading">Loading Writing...</div>
+                    </div>
+                </section>
+                <!-- <div class="coverage-item">
                         <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
                         <p>Placeholder coverage</p>
                     </div>
@@ -417,9 +444,9 @@
                         <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
                         <p>Placeholder coverage</p>
                     </div> -->
-                </div>
-            </section>
-        </main>
+    </div>
+    </section>
+    </main>
     </div>
 
     <script>
@@ -448,7 +475,7 @@
         function updateThemeButton(theme) {
             const button = document.querySelector('.theme-toggle');
             // Always show current mode instead of next action
-            button.textContent = theme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode';
+            button.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
         }
 
         // Load saved theme preference or use system preference
@@ -482,14 +509,32 @@
             });
         }
 
-        // Format date for display
+        // Format date for display with more precision
         function formatDate(dateString) {
             const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-            });
+            const now = new Date();
+            const diffMs = now - date;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+            const diffMinutes = Math.floor(diffMs / (1000 * 60));
+
+            // Show relative time for recent updates
+            if (diffMinutes < 60) {
+                return `${diffMinutes}m ago`;
+            } else if (diffHours < 24) {
+                return `${diffHours}h ago`;
+            } else if (diffDays < 7) {
+                return `${diffDays}d ago`;
+            } else {
+                // For older dates, show the full date with time
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            }
         }
 
         // Truncate description text
