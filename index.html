@@ -380,6 +380,11 @@
                         alt="LessWrong" class="link-icon">
                     LessWrong
                 </a>
+                <a href="https://substack.com/@aliceblair2" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/substack.svg" alt="Substack"
+                        class="link-icon">
+                    Substack
+                </a>
                 <a href="https://github.com/Diatom33" target="_blank">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub"
                         class="link-icon">
@@ -504,14 +509,32 @@
             });
         }
 
-        // Format date for display
+        // Format date for display with more precision
         function formatDate(dateString) {
             const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-            });
+            const now = new Date();
+            const diffMs = now - date;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+            const diffMinutes = Math.floor(diffMs / (1000 * 60));
+
+            // Show relative time for recent updates
+            if (diffMinutes < 60) {
+                return `${diffMinutes}m ago`;
+            } else if (diffHours < 24) {
+                return `${diffHours}h ago`;
+            } else if (diffDays < 7) {
+                return `${diffDays}d ago`;
+            } else {
+                // For older dates, show the full date with time
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            }
         }
 
         // Truncate description text
