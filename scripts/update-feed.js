@@ -61,22 +61,23 @@ async function fetchFeed(feedConfig) {
                 console.log(`Transformed link: ${originalLink} -> ${transformedLink}`);
             }
 
-            // Clean up description by removing LaTeX artifacts and keeping only preview
-            let cleanedDescription = item.contentSnippet || item.content || '';
+            // Clean up description by removing all content before the first <p> tag
+            // Use full content (with HTML) first, then fall back to contentSnippet
+            let cleanedDescription = item.content || item.contentSnippet || '';
 
-            // Remove MathJax CSS and styling artifacts that appear at the beginning of descriptions
+            // Find the first <p> tag and remove everything before it (including <style> blocks)
+            const firstPIndex = cleanedDescription.indexOf('<p>');
+            if (firstPIndex !== -1) {
+                // Keep everything starting from the first <p> tag
+                cleanedDescription = cleanedDescription.substring(firstPIndex);
+            }
+            
+            // Normalize whitespace
             cleanedDescription = cleanedDescription
-                // Remove MathJax CSS blocks that start with .mjx-chtml
-                .replace(/\.mjx-chtml\s*\{[^}]*\}/g, '')
-                // Remove other MathJax-related CSS classes and styles
-                .replace(/\.[a-zA-Z-]*mjx[a-zA-Z-]*\s*\{[^}]*\}/g, '')
-                // Remove any remaining CSS-like blocks
-                .replace(/\.[a-zA-Z-]+\s*\{[^}]*\}/g, '')
-                // Remove excessive whitespace and normalize
                 .replace(/\s+/g, ' ')
                 .trim();
 
-            // Truncate description to a reasonable preview length (first 300 characters)
+            // Truncate description to a reasonable preview length AFTER filtering
             if (cleanedDescription.length > 100) {
                 cleanedDescription = cleanedDescription.substring(0, 297) + '...';
             }
