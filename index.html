@@ -366,7 +366,7 @@
                     GitHub
                 </a>
             </nav>
-            <button class="theme-toggle" onclick="toggleTheme()">☀️ Light Mode</button>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
         </header>
 
         <section class="bio-section">
@@ -382,34 +382,36 @@
         </section>
 
         <main class="main-content">
-            <section class="feed-section">
-                <h3>Latest Writing</h3>
-                <div class="feed-meta-info">
-                    <span id="last-updated">Loading...</span>
-                </div>
-                <div id="rss-feed">
-                    <div class="loading">Loading Writing...</div>
-                </div>
-            </section>
 
             <section class="coverage-section">
                 <h3>Additional Coverage & Links</h3>
                 <div class="coverage-grid">
                     <div class="coverage-item">
-                        <h4><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
-                                target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT Students
-                                To Drop Out</a></h4>
+                        <h4><u><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
+                                    target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
+                                    Students
+                                    To Drop Out</a></u></h4>
                         <p>I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was
                             featured on the front page of Forbes and received over 100,000 views in the first week.</p>
                     </div>
                     <div class="coverage-item">
-                        <h4><a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
-                                target="_blank">CAIP Demo Day</a></h4>
+                        <h4><u><a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
+                                    target="_blank">CAIP Demo Day</a></u></h4>
                         <p>I presented to tens of congressional staffers in DC about the risks of strategic deception in
                             AI. This was part of an event with the <a href="https://www.centeraipolicy.org/"
                                 target="_blank">Center for AI Policy</a>.</p>
                     </div>
-                    <!-- <div class="coverage-item">
+                </div>
+                <section class="feed-section">
+                    <h3>Latest Writing</h3>
+                    <div class="feed-meta-info">
+                        <span id="last-updated">Loading...</span>
+                    </div>
+                    <div id="rss-feed">
+                        <div class="loading">Loading Writing...</div>
+                    </div>
+                </section>
+                <!-- <div class="coverage-item">
                         <h4><a href="https://example.com/conference" target="_blank">Conference Talk</a></h4>
                         <p>Placeholder coverage</p>
                     </div>
@@ -417,9 +419,9 @@
                         <h4><a href="https://example.com/award" target="_blank">Recognition/Award</a></h4>
                         <p>Placeholder coverage</p>
                     </div> -->
-                </div>
-            </section>
-        </main>
+    </div>
+    </section>
+    </main>
     </div>
 
     <script>
@@ -448,7 +450,7 @@
         function updateThemeButton(theme) {
             const button = document.querySelector('.theme-toggle');
             // Always show current mode instead of next action
-            button.textContent = theme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode';
+            button.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
         }
 
         // Load saved theme preference or use system preference
@@ -527,7 +529,7 @@
                 // Generate feed HTML
                 const feedHTML = feedData.items.map(item => `
                     <div class="feed-item">
-                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                        <h4><u><a href="${item.link}" target="_blank">${item.title}</a></u></h4>
                         ${item.description ? `<div class="feed-description">${truncateText(item.description)}</div>` : ''}
                         <div class="feed-meta">
                             <span class="feed-source">${item.source || item.category || 'Unknown'}</span>
@@ -582,7 +584,7 @@
 
             return exampleItems.map(item => `
                 <div class="feed-item">
-                    <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                    <h4><u><a href="${item.link}" target="_blank">${item.title}</a></u></h4>
                     <div class="feed-description">${item.description}</div>
                     <div class="feed-meta">
                         <span class="feed-source">${item.source}</span>
