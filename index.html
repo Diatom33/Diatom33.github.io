@@ -153,6 +153,16 @@
             margin-bottom: 1.5rem;
         }
 
+        .bio-text a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .bio-text a:hover {
+            color: var(--link-hover);
+        }
+
         .feed-section {
             background: var(--card-bg);
             padding: 2rem;
@@ -197,7 +207,7 @@
 
         .feed-item h4 a {
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: underline;
             font-size: 1rem;
             font-weight: 600;
         }
@@ -268,7 +278,7 @@
 
         .coverage-item h4 a {
             color: var(--text-color);
-            text-decoration: none;
+            text-decoration: underline;
             font-weight: 600;
             margin-bottom: 0.5rem;
             display: block;
@@ -283,6 +293,16 @@
             opacity: 0.8;
             font-size: 0.9rem;
             line-height: 1.5;
+        }
+
+        .coverage-item p a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .coverage-item p a:hover {
+            color: var(--link-hover);
         }
 
         .loading {
@@ -387,16 +407,16 @@
                 <h3>Additional Coverage & Links</h3>
                 <div class="coverage-grid">
                     <div class="coverage-item">
-                        <h4><u><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
-                                    target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
-                                    Students
-                                    To Drop Out</a></u></h4>
+                        <h4><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
+                                target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
+                                Students
+                                To Drop Out</a></h4>
                         <p>I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was
                             featured on the front page of Forbes and received over 100,000 views in the first week.</p>
                     </div>
                     <div class="coverage-item">
-                        <h4><u><a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
-                                    target="_blank">CAIP Demo Day</a></u></h4>
+                        <h4><a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
+                                target="_blank">CAIP Demo Day</a></h4>
                         <p>I presented to tens of congressional staffers in DC about the risks of strategic deception in
                             AI. This was part of an event with the <a href="https://www.centeraipolicy.org/"
                                 target="_blank">Center for AI Policy</a>.</p>
@@ -529,7 +549,7 @@
                 // Generate feed HTML
                 const feedHTML = feedData.items.map(item => `
                     <div class="feed-item">
-                        <h4><u><a href="${item.link}" target="_blank">${item.title}</a></u></h4>
+                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
                         ${item.description ? `<div class="feed-description">${truncateText(item.description)}</div>` : ''}
                         <div class="feed-meta">
                             <span class="feed-source">${item.source || item.category || 'Unknown'}</span>
@@ -584,7 +604,7 @@
 
             return exampleItems.map(item => `
                 <div class="feed-item">
-                    <h4><u><a href="${item.link}" target="_blank">${item.title}</a></u></h4>
+                    <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
                     <div class="feed-description">${item.description}</div>
                     <div class="feed-meta">
                         <span class="feed-source">${item.source}</span>
