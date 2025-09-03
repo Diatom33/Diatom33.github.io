@@ -220,6 +220,16 @@
             margin-bottom: 0.5rem;
         }
 
+        .feed-description a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .feed-description a:hover {
+            color: var(--link-hover);
+        }
+
         .feed-meta {
             color: var(--text-color);
             opacity: 0.7;
@@ -530,11 +540,17 @@
             }
         }
 
-        // Truncate description text
+        // Strip HTML and truncate description text
         function truncateText(text, maxLength = 150) {
             if (!text) return '';
-            if (text.length <= maxLength) return text;
-            return text.substring(0, maxLength).trim() + '...';
+            
+            // Strip HTML tags and decode HTML entities
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = text;
+            const plainText = tempDiv.textContent || tempDiv.innerText || '';
+            
+            if (plainText.length <= maxLength) return plainText;
+            return plainText.substring(0, maxLength).trim() + '...';
         }
 
         // Load RSS feed from GitHub Actions generated JSON
