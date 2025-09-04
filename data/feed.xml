@@ -3,7 +3,7 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Wed, 03 Sep 2025 18:22:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 04 Sep 2025 01:12:40 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
     <item>
@@ -16,6 +16,42 @@
       <source>Newsletter</source>
     </item>
     <item>
+      <title><![CDATA[Handing People Puzzles]]></title>
+      <link>https://www.lesswrong.com/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles</link>
+      <description><![CDATA[<p>We’re a com­mu­nity that is es­pe­cially vuln­er­a­ble to <a href="https://xkcd.com/356/">nerd sniping</a>, as com­mu­ni­ties go. I’m fond of par­tak­ing in a lit­tle nerd sniping my­self. While the origi­nal xkcd paints this pas­time in a mal­i­cious light, I ar­gue that this is in fact a gre......]]></description>
+      <pubDate>Mon, 18 Aug 2025 06:27:58 GMT</pubDate>
+      <guid>xRZfpYkC9MwqG4tKi</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Listening Before Speaking]]></title>
+      <link>https://www.lesswrong.com/posts/HT7wTWNdtqmiJ4veE/listening-before-speaking</link>
+      <description><![CDATA[<p><i>Epistemic Sta­tus: anec­data and intuition</i></p><p><i>ed­ited GPTl;dr: For so­cially trans­mit­table skills that re­quire learn­ing lots of new cat­e­gory bound­aries (lan­guages, sub­cul­tures, etc.), a de­liber­ate in­put-heavy out­put-light phase at the be­gin­ning re­duces fos­silized......]]></description>
+      <pubDate>Mon, 11 Aug 2025 05:23:00 GMT</pubDate>
+      <guid>HT7wTWNdtqmiJ4veE</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Notes from Dopamine Detoxing]]></title>
+      <link>https://www.lesswrong.com/posts/BeXGMt7gmGFXFerMC/notes-from-dopamine-detoxing</link>
+      <description><![CDATA[<p><i>[Epistemic sta­tus: I’m not a neu­ro­scien­tist nor any kind of med­i­cal nor biolog­i­cal pro­fes­sional. I have an am­a­teur un­der­stand­ing of neu­ro­chem­istry and cog­ni­tive sci­ence. This post is pri­mar­ily based on what has worked for me and my in­tu­itions around why. I err on th......]]></description>
+      <pubDate>Tue, 20 May 2025 23:43:31 GMT</pubDate>
+      <guid>BeXGMt7gmGFXFerMC</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Moral Obligation and Moral Opportunity]]></title>
+      <link>https://www.lesswrong.com/posts/AmwgNS3ybwF8Eovho/moral-obligation-and-moral-opportunity</link>
+      <description><![CDATA[<p><i>This con­cept and ter­minol­ogy was spawned out of a con­ver­sa­tion a few years ago with my friend </i><a href="/users/screwtape"><i>Skyler.</i></a><i> I fi­nally de­cided to write it up. Any mis­takes here are my own.</i></p><hr><p>Every once in a while, I find my­self at yet an­other ra­......]]></description>
+      <pubDate>Wed, 14 May 2025 16:42:23 GMT</pubDate>
+      <guid>AmwgNS3ybwF8Eovho</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
       <title><![CDATA[ML Safety Newsletter #14]]></title>
       <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</link>
       <description><![CDATA[Resisting Prompt Injection, Evaluating Cyberattack Capabilities, and SafeBench Winners...]]></description>
@@ -23,6 +59,42 @@
       <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
+    </item>
+    <item>
+      <title><![CDATA[Reflections on Neuralese]]></title>
+      <link>https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese</link>
+      <description><![CDATA[<p><i>Thanks to Bren­dan Halstead for feed­back on an early draft of this piece. Any mis­takes here are my own.</i></p><p><i>[Epistemic sta­tus: I’ve looked at </i><a href="https://github.com/facebookresearch/coconut"><i>the rele­vant code</i></a><i> enough to be mod­er­ately sure I un­der­stand ......]]></description>
+      <pubDate>Wed, 12 Mar 2025 16:29:31 GMT</pubDate>
+      <guid>qehggwKRMEyWqvjZG</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Cautions about LLMs in Human Cognitive Loops]]></title>
+      <link>https://www.lesswrong.com/posts/apCnFyXJamoSkHcE4/cautions-about-llms-in-human-cognitive-loops</link>
+      <description><![CDATA[<p><i>soft pre­req­ui­site: skim­ming through </i><a href="/posts/9kQFure4hdDmRBNdH/how-it-feels-to-have-your-mind-hacked-by-an-ai"><i>How it feels to have your mind hacked by an AI</i></a><i> un­til you get the gen­eral point. I’ll try to make this post read­able as a stan­dalone, but you may ge......]]></description>
+      <pubDate>Sun, 02 Mar 2025 19:53:10 GMT</pubDate>
+      <guid>apCnFyXJamoSkHcE4</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Absorbing Your Friends’ Powers]]></title>
+      <link>https://www.lesswrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers</link>
+      <description><![CDATA[<p>Richard Ham­ming was a math­e­mat­i­cian who worked at Bell Labs dur­ing the 1940s-1970s. He had a habit of sit­ting down with sci­en­tists in other fields and ask­ing them “What are the im­por­tant prob­lems of your field?” After they ex­plained their field’s most im­por­tant open prob­lem, h......]]></description>
+      <pubDate>Thu, 30 Jan 2025 02:32:27 GMT</pubDate>
+      <guid>J6gKFimPwdLc8jmhc</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Alice Blair’s Shortform]]></title>
+      <link>https://www.lesswrong.com/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform</link>
+      <description><![CDATA[...]]></description>
+      <pubDate>Mon, 27 Jan 2025 23:25:10 GMT</pubDate>
+      <guid>eukutrwGBPutoQoyM</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
     </item>
   </channel>
 </rss>
