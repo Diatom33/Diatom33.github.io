@@ -2,13 +2,13 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-09-03T18:22:56.290Z",
-    "totalItems": 2,
+    "lastUpdated": "2025-09-04T01:12:40.193Z",
+    "totalItems": 10,
     "sources": [
       {
-        "title": "Error: LessWrong",
-        "description": "Failed to fetch feed",
-        "link": "https://www.greaterwrong.com/users/alice-blair?show=posts&format=rss",
+        "title": "Alice Blair's Posts - LessWrong 2.0 viewer",
+        "description": "Alice Blair's Posts - LessWrong 2.0 viewer",
+        "link": "https://www.greaterwrong.com/",
         "category": "LessWrong",
         "name": "LessWrong",
         "dateFilter": null
@@ -38,6 +38,54 @@
       "feedTitle": "ML Safety Newsletter"
     },
     {
+      "title": "Handing People Puzzles",
+      "link": "https://www.lesswrong.com/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles",
+      "description": "<p>We’re a com­mu­nity that is es­pe­cially vuln­er­a­ble to <a href=\"https://xkcd.com/356/\">nerd sniping</a>, as com­mu­ni­ties go. I’m fond of par­tak­ing in a lit­tle nerd sniping my­self. While the origi­nal xkcd paints this pas­time in a mal­i­cious light, I ar­gue that this is in fact a gre...",
+      "pubDate": "Mon, 18 Aug 2025 06:27:58 +0000",
+      "isoDate": "2025-08-18T06:27:58.000Z",
+      "author": "Alice Blair",
+      "guid": "xRZfpYkC9MwqG4tKi",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Listening Before Speaking",
+      "link": "https://www.lesswrong.com/posts/HT7wTWNdtqmiJ4veE/listening-before-speaking",
+      "description": "<p><i>Epistemic Sta­tus: anec­data and intuition</i></p><p><i>ed­ited GPTl;dr: For so­cially trans­mit­table skills that re­quire learn­ing lots of new cat­e­gory bound­aries (lan­guages, sub­cul­tures, etc.), a de­liber­ate in­put-heavy out­put-light phase at the be­gin­ning re­duces fos­silized...",
+      "pubDate": "Mon, 11 Aug 2025 05:23:00 +0000",
+      "isoDate": "2025-08-11T05:23:00.000Z",
+      "author": "Alice Blair",
+      "guid": "HT7wTWNdtqmiJ4veE",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Notes from Dopamine Detoxing",
+      "link": "https://www.lesswrong.com/posts/BeXGMt7gmGFXFerMC/notes-from-dopamine-detoxing",
+      "description": "<p><i>[Epistemic sta­tus: I’m not a neu­ro­scien­tist nor any kind of med­i­cal nor biolog­i­cal pro­fes­sional. I have an am­a­teur un­der­stand­ing of neu­ro­chem­istry and cog­ni­tive sci­ence. This post is pri­mar­ily based on what has worked for me and my in­tu­itions around why. I err on th...",
+      "pubDate": "Tue, 20 May 2025 23:43:31 +0000",
+      "isoDate": "2025-05-20T23:43:31.000Z",
+      "author": "Alice Blair",
+      "guid": "BeXGMt7gmGFXFerMC",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Moral Obligation and Moral Opportunity",
+      "link": "https://www.lesswrong.com/posts/AmwgNS3ybwF8Eovho/moral-obligation-and-moral-opportunity",
+      "description": "<p><i>This con­cept and ter­minol­ogy was spawned out of a con­ver­sa­tion a few years ago with my friend </i><a href=\"/users/screwtape\"><i>Skyler.</i></a><i> I fi­nally de­cided to write it up. Any mis­takes here are my own.</i></p><hr><p>Every once in a while, I find my­self at yet an­other ra­...",
+      "pubDate": "Wed, 14 May 2025 16:42:23 +0000",
+      "isoDate": "2025-05-14T16:42:23.000Z",
+      "author": "Alice Blair",
+      "guid": "AmwgNS3ybwF8Eovho",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
       "title": "ML Safety Newsletter #14",
       "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-14",
       "description": "Resisting Prompt Injection, Evaluating Cyberattack Capabilities, and SafeBench Winners",
@@ -48,6 +96,54 @@
       "category": "Newsletter",
       "source": "Newsletter",
       "feedTitle": "ML Safety Newsletter"
+    },
+    {
+      "title": "Reflections on Neuralese",
+      "link": "https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese",
+      "description": "<p><i>Thanks to Bren­dan Halstead for feed­back on an early draft of this piece. Any mis­takes here are my own.</i></p><p><i>[Epistemic sta­tus: I’ve looked at </i><a href=\"https://github.com/facebookresearch/coconut\"><i>the rele­vant code</i></a><i> enough to be mod­er­ately sure I un­der­stand ...",
+      "pubDate": "Wed, 12 Mar 2025 16:29:31 +0000",
+      "isoDate": "2025-03-12T16:29:31.000Z",
+      "author": "Alice Blair",
+      "guid": "qehggwKRMEyWqvjZG",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Cautions about LLMs in Human Cognitive Loops",
+      "link": "https://www.lesswrong.com/posts/apCnFyXJamoSkHcE4/cautions-about-llms-in-human-cognitive-loops",
+      "description": "<p><i>soft pre­req­ui­site: skim­ming through </i><a href=\"/posts/9kQFure4hdDmRBNdH/how-it-feels-to-have-your-mind-hacked-by-an-ai\"><i>How it feels to have your mind hacked by an AI</i></a><i> un­til you get the gen­eral point. I’ll try to make this post read­able as a stan­dalone, but you may ge...",
+      "pubDate": "Sun, 02 Mar 2025 19:53:10 +0000",
+      "isoDate": "2025-03-02T19:53:10.000Z",
+      "author": "Alice Blair",
+      "guid": "apCnFyXJamoSkHcE4",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Absorbing Your Friends’ Powers",
+      "link": "https://www.lesswrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers",
+      "description": "<p>Richard Ham­ming was a math­e­mat­i­cian who worked at Bell Labs dur­ing the 1940s-1970s. He had a habit of sit­ting down with sci­en­tists in other fields and ask­ing them “What are the im­por­tant prob­lems of your field?” After they ex­plained their field’s most im­por­tant open prob­lem, h...",
+      "pubDate": "Thu, 30 Jan 2025 02:32:27 +0000",
+      "isoDate": "2025-01-30T02:32:27.000Z",
+      "author": "Alice Blair",
+      "guid": "J6gKFimPwdLc8jmhc",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Alice Blair’s Shortform",
+      "link": "https://www.lesswrong.com/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform",
+      "description": "",
+      "pubDate": "Mon, 27 Jan 2025 23:25:10 +0000",
+      "isoDate": "2025-01-27T23:25:10.000Z",
+      "author": "Alice Blair",
+      "guid": "eukutrwGBPutoQoyM",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
     }
   ]
 }
