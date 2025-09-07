@@ -1,24 +1,2 @@
 User-agent: *
 Allow: /
-
-# Allow all well-behaved crawlers to access the site
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-# RSS feed available
-# RSS: https://aliceblair.net/data/feed.xml
-
-# LLM-friendly content
-# See llms.txt for structured content designed for LLM consumption
