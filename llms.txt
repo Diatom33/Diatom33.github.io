@@ -1,0 +1,31 @@
+# Alice Blair
+
+**Technical Writer, AI Safety**
+
+I'm Alice, a technical AI safety writer. I write the [ML Safety Newsletter](https://newsletter.mlsafety.org) and my personal writing is on [LessWrong](https://www.lesswrong.com/users/alice-blair). I have a background in technical ML, but pivoted to communications because I think this is where I can do the most good.
+
+## Links
+
+- [LinkedIn](https://linkedin.com/in/alice-blair)
+- [LessWrong](https://www.lesswrong.com/users/alice-blair)  
+- [Substack](https://substack.com/@aliceblair2)
+- [GitHub](https://github.com/Diatom33)
+
+## Additional Coverage & Links
+
+### Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT Students To Drop Out
+https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/
+
+I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was featured on the front page of Forbes and received over 100,000 views in the first week. There are some issues with the article, addressed well by Yixiong Hao [here](https://substack.com/home/post/p-170850048).
+
+### CAIP Demo Day
+https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/
+
+I presented to tens of congressional staffers in DC about the risks of strategic deception in AI. This was part of an event with the [Center for AI Policy](https://www.centeraipolicy.org/).
+
+## Latest Writing
+
+The site includes an RSS feed of my latest writing from LessWrong and the ML Safety Newsletter, automatically updated every 6 hours. The feed data is available at:
+
+- JSON format: `/data/feed.json`
+- XML format: `/data/feed.xml`
