@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-09-12T12:32:24.976Z",
+    "lastUpdated": "2025-09-12T18:19:50.872Z",
     "totalItems": 10,
     "sources": [
       {
@@ -25,6 +25,18 @@
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "ML Safety Newsletter #16",
+      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
+      "description": "Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming",
+      "pubDate": "Fri, 12 Sep 2025 16:30:32 GMT",
+      "isoDate": "2025-09-12T16:30:32.000Z",
+      "author": "Alice Blair",
+      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
+    },
     {
       "title": "Being Handed Puzzles",
       "link": "https://www.lesswrong.com/posts/fe2zc6wKbFvjChrkg/being-handed-puzzles",
@@ -129,18 +141,6 @@
       "isoDate": "2025-03-02T19:53:10.000Z",
       "author": "Alice Blair",
       "guid": "apCnFyXJamoSkHcE4",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Absorbing Your Friends’ Powers",
-      "link": "https://www.lesswrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers",
-      "description": "<p>Richard Ham­ming was a math­e­mat­i­cian who worked at Bell Labs dur­ing the 1940s-1970s. He had a habit of sit­ting down with sci­en­tists in other fields and ask­ing them “What are the im­por­tant prob­lems of your field?” After they ex­plained their field’s most im­por­tant open prob­lem, h...",
-      "pubDate": "Thu, 30 Jan 2025 02:32:27 +0000",
-      "isoDate": "2025-01-30T02:32:27.000Z",
-      "author": "Alice Blair",
-      "guid": "J6gKFimPwdLc8jmhc",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
