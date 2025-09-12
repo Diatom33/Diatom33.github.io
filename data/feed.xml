@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Fri, 12 Sep 2025 12:32:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 18:19:50 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[ML Safety Newsletter #16]]></title>
+      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</link>
+      <description><![CDATA[Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming...]]></description>
+      <pubDate>Fri, 12 Sep 2025 16:30:32 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
+    </item>
     <item>
       <title><![CDATA[Being Handed Puzzles]]></title>
       <link>https://www.lesswrong.com/posts/fe2zc6wKbFvjChrkg/being-handed-puzzles</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>soft pre­req­ui­site: skim­ming through </i><a href="/posts/9kQFure4hdDmRBNdH/how-it-feels-to-have-your-mind-hacked-by-an-ai"><i>How it feels to have your mind hacked by an AI</i></a><i> un­til you get the gen­eral point. I’ll try to make this post read­able as a stan­dalone, but you may ge......]]></description>
       <pubDate>Sun, 02 Mar 2025 19:53:10 GMT</pubDate>
       <guid>apCnFyXJamoSkHcE4</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Absorbing Your Friends’ Powers]]></title>
-      <link>https://www.lesswrong.com/posts/J6gKFimPwdLc8jmhc/absorbing-your-friends-powers</link>
-      <description><![CDATA[<p>Richard Ham­ming was a math­e­mat­i­cian who worked at Bell Labs dur­ing the 1940s-1970s. He had a habit of sit­ting down with sci­en­tists in other fields and ask­ing them “What are the im­por­tant prob­lems of your field?” After they ex­plained their field’s most im­por­tant open prob­lem, h......]]></description>
-      <pubDate>Thu, 30 Jan 2025 02:32:27 GMT</pubDate>
-      <guid>J6gKFimPwdLc8jmhc</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
