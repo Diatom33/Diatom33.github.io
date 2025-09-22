@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 22 Sep 2025 01:20:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 06:26:27 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Warmth, Light, Flame]]></title>
+      <link>https://www.lesswrong.com/posts/MkybGEeFvh4srkWos/warmth-light-flame</link>
+      <description><![CDATA[<p><i>I’m steal­ing this ter­minol­ogy from Eliezer (</i><a href="https://glowfic.com/replies/1942496#reply-1942496"><i>from planecrash</i></a><i>, heavy spoilers), but mod­ify­ing them to point at con­cepts that I think those words more nat­u­rally evoke for me.</i></p><p><i>This post con­tains ......]]></description>
+      <pubDate>Mon, 22 Sep 2025 04:19:48 GMT</pubDate>
+      <guid>MkybGEeFvh4srkWos</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[ML Safety Newsletter #16]]></title>
       <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>Thanks to Bren­dan Halstead for feed­back on an early draft of this piece. Any mis­takes here are my own.</i></p><p><i>[Epistemic sta­tus: I’ve looked at </i><a href="https://github.com/facebookresearch/coconut"><i>the rele­vant code</i></a><i> enough to be mod­er­ately sure I un­der­stand ......]]></description>
       <pubDate>Wed, 12 Mar 2025 16:29:31 GMT</pubDate>
       <guid>qehggwKRMEyWqvjZG</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Cautions about LLMs in Human Cognitive Loops]]></title>
-      <link>https://www.lesswrong.com/posts/apCnFyXJamoSkHcE4/cautions-about-llms-in-human-cognitive-loops</link>
-      <description><![CDATA[<p><i>soft pre­req­ui­site: skim­ming through </i><a href="/posts/9kQFure4hdDmRBNdH/how-it-feels-to-have-your-mind-hacked-by-an-ai"><i>How it feels to have your mind hacked by an AI</i></a><i> un­til you get the gen­eral point. I’ll try to make this post read­able as a stan­dalone, but you may ge......]]></description>
-      <pubDate>Sun, 02 Mar 2025 19:53:10 GMT</pubDate>
-      <guid>apCnFyXJamoSkHcE4</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
