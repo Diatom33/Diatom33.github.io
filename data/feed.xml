@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Thu, 25 Sep 2025 01:15:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Sep 2025 06:25:32 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[IABIED is on the NYT bestseller list]]></title>
+      <link>https://www.lesswrong.com/posts/QrhohmahGrztEebmY/iabied-is-on-the-nyt-bestseller-list</link>
+      <description><![CDATA[<p><a href="https://ifanyonebuildsit.com/">If Any­one Builds it, Every­one Dies</a> is cur­rently #7 on the <a href="https://www.nytimes.com/books/best-sellers/combined-print-and-e-book-nonfiction/">Com­bined Print and E-Book Non­fic­tion cat­e­gory</a>, and #8 on the <a href="https://www.nytimes......]]></description>
+      <pubDate>Thu, 25 Sep 2025 02:32:54 GMT</pubDate>
+      <guid>QrhohmahGrztEebmY</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[Warmth, Light, Flame]]></title>
       <link>https://www.lesswrong.com/posts/MkybGEeFvh4srkWos/warmth-light-flame</link>
@@ -86,15 +95,6 @@
       <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
-    </item>
-    <item>
-      <title><![CDATA[Reflections on Neuralese]]></title>
-      <link>https://www.lesswrong.com/posts/qehggwKRMEyWqvjZG/reflections-on-neuralese</link>
-      <description><![CDATA[<p><i>Thanks to Bren­dan Halstead for feed­back on an early draft of this piece. Any mis­takes here are my own.</i></p><p><i>[Epistemic sta­tus: I’ve looked at </i><a href="https://github.com/facebookresearch/coconut"><i>the rele­vant code</i></a><i> enough to be mod­er­ately sure I un­der­stand ......]]></description>
-      <pubDate>Wed, 12 Mar 2025 16:29:31 GMT</pubDate>
-      <guid>qehggwKRMEyWqvjZG</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
     </item>
   </channel>
 </rss>
