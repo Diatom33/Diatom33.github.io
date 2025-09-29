@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 29 Sep 2025 06:27:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 12:35:54 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Applied Murphyjitsu Meditation]]></title>
+      <link>https://www.lesswrong.com/posts/YTfXJzrzWGj8mjQ2t/applied-murphyjitsu-meditation</link>
+      <description><![CDATA[<p><i>Ex­panded and gen­er­al­ized ver­sion of </i><a href="/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform#comment-riwHkC6KnMpYpLFro"><i>this shortform</i></a></p><h1>Mo­ti­va­tion: Typ­ing Fast</h1><p>Part of my writ­ing pro­cess in­volves get­ting words out of my head and into a text ed­i­tor......]]></description>
+      <pubDate>Mon, 29 Sep 2025 06:31:44 GMT</pubDate>
+      <guid>YTfXJzrzWGj8mjQ2t</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[IABIED is on the NYT bestseller list]]></title>
       <link>https://www.lesswrong.com/posts/QrhohmahGrztEebmY/iabied-is-on-the-nyt-bestseller-list</link>
@@ -86,15 +95,6 @@
       <guid>AmwgNS3ybwF8Eovho</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[ML Safety Newsletter #14]]></title>
-      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</link>
-      <description><![CDATA[Resisting Prompt Injection, Evaluating Cyberattack Capabilities, and SafeBench Winners...]]></description>
-      <pubDate>Wed, 07 May 2025 16:02:03 GMT</pubDate>
-      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</guid>
-      <category>Newsletter</category>
-      <source>Newsletter</source>
     </item>
   </channel>
 </rss>
