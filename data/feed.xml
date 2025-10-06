@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 06 Oct 2025 01:15:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Oct 2025 06:25:42 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Alignment Faking Demo for Congressional Staffers]]></title>
+      <link>https://www.lesswrong.com/posts/55CBrLrXiQgHBb2gF/alignment-faking-demo-for-congressional-staffers</link>
+      <description><![CDATA[<p>In Fe­bru­ary 2025, <a href="https://awestover.github.io/">Alek Westover</a> and I pre­sented a ~5-minute talk and demo about <a href="https://www.anthropic.com/research/alignment-faking">Align­ment Fak­ing</a> to sev­eral groups of con­gres­sional staffers in­ter­ested in AI at an event hoste......]]></description>
+      <pubDate>Mon, 06 Oct 2025 01:44:03 GMT</pubDate>
+      <guid>55CBrLrXiQgHBb2gF</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[Applied Murphyjitsu Meditation]]></title>
       <link>https://www.lesswrong.com/posts/YTfXJzrzWGj8mjQ2t/applied-murphyjitsu-meditation</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>[Epistemic sta­tus: I’m not a neu­ro­scien­tist nor any kind of med­i­cal nor biolog­i­cal pro­fes­sional. I have an am­a­teur un­der­stand­ing of neu­ro­chem­istry and cog­ni­tive sci­ence. This post is pri­mar­ily based on what has worked for me and my in­tu­itions around why. I err on th......]]></description>
       <pubDate>Tue, 20 May 2025 23:43:31 GMT</pubDate>
       <guid>BeXGMt7gmGFXFerMC</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Moral Obligation and Moral Opportunity]]></title>
-      <link>https://www.lesswrong.com/posts/AmwgNS3ybwF8Eovho/moral-obligation-and-moral-opportunity</link>
-      <description><![CDATA[<p><i>This con­cept and ter­minol­ogy was spawned out of a con­ver­sa­tion a few years ago with my friend </i><a href="/users/screwtape"><i>Skyler.</i></a><i> I fi­nally de­cided to write it up. Any mis­takes here are my own.</i></p><hr><p>Every once in a while, I find my­self at yet an­other ra­......]]></description>
-      <pubDate>Wed, 14 May 2025 16:42:23 GMT</pubDate>
-      <guid>AmwgNS3ybwF8Eovho</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
