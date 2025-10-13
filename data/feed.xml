@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 13 Oct 2025 01:19:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 06:26:55 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Sublinear Utility in Population and other Uncommon Utilitarianism]]></title>
+      <link>https://www.lesswrong.com/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon</link>
+      <description><![CDATA[<p><i>Con­tent warn­ing: An­throp­ics, Mo­ral Philos­o­phy, and Shrimp</i></p><p><i>This post isn’t try­ing to be self con­tained, since I have so many dis­parate thoughts about this. In­stead, I’m try­ing to put a rep­re­sen­ta­tive set of ideas for­ward, and I hope that if peo­ple are in­ter­es......]]></description>
+      <pubDate>Mon, 13 Oct 2025 06:19:52 GMT</pubDate>
+      <guid>NRxn6R2tesRzzTBKG</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[Alignment Faking Demo for Congressional Staffers]]></title>
       <link>https://www.lesswrong.com/posts/55CBrLrXiQgHBb2gF/alignment-faking-demo-for-congressional-staffers</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>Epistemic Sta­tus: anec­data and intuition</i></p><p><i>ed­ited GPTl;dr: For so­cially trans­mit­table skills that re­quire learn­ing lots of new cat­e­gory bound­aries (lan­guages, sub­cul­tures, etc.), a de­liber­ate in­put-heavy out­put-light phase at the be­gin­ning re­duces fos­silized......]]></description>
       <pubDate>Mon, 11 Aug 2025 05:23:00 GMT</pubDate>
       <guid>HT7wTWNdtqmiJ4veE</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Notes from Dopamine Detoxing]]></title>
-      <link>https://www.lesswrong.com/posts/BeXGMt7gmGFXFerMC/notes-from-dopamine-detoxing</link>
-      <description><![CDATA[<p><i>[Epistemic sta­tus: I’m not a neu­ro­scien­tist nor any kind of med­i­cal nor biolog­i­cal pro­fes­sional. I have an am­a­teur un­der­stand­ing of neu­ro­chem­istry and cog­ni­tive sci­ence. This post is pri­mar­ily based on what has worked for me and my in­tu­itions around why. I err on th......]]></description>
-      <pubDate>Tue, 20 May 2025 23:43:31 GMT</pubDate>
-      <guid>BeXGMt7gmGFXFerMC</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
