@@ -28,6 +28,7 @@ const RSS_FEEDS = [
 const MAX_ITEMS = parseInt(process.env.MAX_ITEMS) || 10;
 const OUTPUT_DIR = 'data';
 const OUTPUT_FILE = 'feed.json';
+const ARXIV_PAPERS_FILE = 'data/arxiv-papers.json';
 
 // Ensure data directory exists
 async function ensureDataDirectory() {
@@ -137,6 +138,32 @@ async function fetchFeed(feedConfig) {
     }
 }
 
+// Load arXiv papers from local JSON file
+async function loadArxivPapers() {
+    try {
+        if (!await fs.pathExists(ARXIV_PAPERS_FILE)) {
+            console.log('No arXiv papers file found, skipping.');
+            return { feedInfo: { name: 'arXiv', category: 'arXiv' }, items: [] };
+        }
+
+        const arxivData = await fs.readJson(ARXIV_PAPERS_FILE);
+        console.log(`Loaded ${arxivData.papers?.length || 0} arXiv papers`);
+
+        return {
+            feedInfo: { name: 'arXiv', category: 'arXiv', title: 'arXiv Papers' },
+            items: (arxivData.papers || []).map(p => ({
+                ...p,
+                category: 'arXiv',
+                source: 'arXiv',
+                isoDate: p.pubDate
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading arXiv papers:', error.message);
+        return { feedInfo: { name: 'arXiv', category: 'arXiv' }, items: [] };
+    }
+}
+
 // Fetch all RSS feeds
 async function fetchAllFeeds() {
     console.log('Starting RSS feed fetch...');
@@ -145,24 +172,31 @@ async function fetchAllFeeds() {
         .filter(feed => feed.url && feed.url !== 'https://example.com/feed1.xml' && feed.url !== 'https://example.com/feed2.xml')
         .map(feed => fetchFeed(feed));
 
+    let feedResults;
+
     if (feedPromises.length === 0) {
         console.log('No valid RSS feed URLs provided. Using example data.');
-        return createExampleData();
+        feedResults = createExampleData();
+    } else {
+        const results = await Promise.allSettled(feedPromises);
+
+        feedResults = results.map((result, index) => {
+            if (result.status === 'fulfilled') {
+                return result.value;
+            } else {
+                console.error(`Failed to fetch feed ${RSS_FEEDS[index].name}:`, result.reason);
+                return {
+                    feedInfo: RSS_FEEDS[index],
+                    items: []
+                };
+            }
+        });
     }
 
-    const results = await Promise.allSettled(feedPromises);
+    // Add arXiv papers
+    feedResults.push(await loadArxivPapers());
 
-    return results.map((result, index) => {
-        if (result.status === 'fulfilled') {
-            return result.value;
-        } else {
-            console.error(`Failed to fetch feed ${RSS_FEEDS[index].name}:`, result.reason);
-            return {
-                feedInfo: RSS_FEEDS[index],
-                items: []
-            };
-        }
-    });
+    return feedResults;
 }
 
 // Create example data when no real feeds are provided
