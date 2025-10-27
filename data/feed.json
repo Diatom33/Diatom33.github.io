@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-10-27T01:23:57.789Z",
+    "lastUpdated": "2025-10-27T06:28:43.670Z",
     "totalItems": 10,
     "sources": [
       {
@@ -29,6 +29,18 @@
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "Uncommon Utilitarianism #3: Bounded Utility Functions",
+      "link": "https://www.lesswrong.com/posts/jvXF88XmqtsR7uE4w/uncommon-utilitarianism-3-bounded-utility-functions",
+      "description": "<p><a href=\"/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism\">Pre­vi­ous Post</a></p><p>For con­text on how I dis­cuss util­i­tar­i­anism in this se­quence, read the <a href=\"/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon\">first post</a>.</p>...",
+      "pubDate": "Mon, 27 Oct 2025 05:06:25 +0000",
+      "isoDate": "2025-10-27T05:06:25.000Z",
+      "author": "Alice Blair",
+      "guid": "jvXF88XmqtsR7uE4w",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
     {
       "title": "Uncommon Utilitarianism #2: Positive Utilitarianism",
       "link": "https://www.lesswrong.com/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism",
@@ -136,18 +148,6 @@
       "category": "Newsletter",
       "source": "Newsletter",
       "feedTitle": "ML Safety Newsletter"
-    },
-    {
-      "title": "Handing People Puzzles",
-      "link": "https://www.lesswrong.com/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles",
-      "description": "<p>We’re a com­mu­nity that is es­pe­cially vuln­er­a­ble to <a href=\"https://xkcd.com/356/\">nerd sniping</a>, as com­mu­ni­ties go. I’m fond of par­tak­ing in a lit­tle nerd sniping my­self. While the origi­nal xkcd paints this pas­time in a mal­i­cious light, I ar­gue that this is in fact a gre...",
-      "pubDate": "Mon, 18 Aug 2025 06:27:58 +0000",
-      "isoDate": "2025-08-18T06:27:58.000Z",
-      "author": "Alice Blair",
-      "guid": "xRZfpYkC9MwqG4tKi",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
     }
   ]
 }
