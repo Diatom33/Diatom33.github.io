@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Wed, 29 Oct 2025 12:37:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Oct 2025 18:25:59 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[AISN #65: Measuring Automation and Superintelligence Moratorium Letter]]></title>
+      <link>https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence</link>
+      <description><![CDATA[<p>Wel­come to the AI Safety Newslet­ter by the <a href="https://www.safe.ai/">Cen­ter for AI Safety</a>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired.</p><p>In this edi­tion: A new bench­mark mea­sures AI au­toma­tion; 50,000 peo­ple, in­clud­ing top AI s......]]></description>
+      <pubDate>Wed, 29 Oct 2025 16:05:26 GMT</pubDate>
+      <guid>wD8tdEbtMSrcSfJmM</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[Uncommon Utilitarianism #3: Bounded Utility Functions]]></title>
       <link>https://www.lesswrong.com/posts/jvXF88XmqtsR7uE4w/uncommon-utilitarianism-3-bounded-utility-functions</link>
@@ -86,15 +95,6 @@
       <guid>fe2zc6wKbFvjChrkg</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[ML Safety Newsletter #15]]></title>
-      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-15</link>
-      <description><![CDATA[Risks in Agentic Computer Use, Goal Drift, Shutdown Resistance, and Critiques of Scheming Research...]]></description>
-      <pubDate>Mon, 18 Aug 2025 17:08:04 GMT</pubDate>
-      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-15</guid>
-      <category>Newsletter</category>
-      <source>Newsletter</source>
     </item>
   </channel>
 </rss>
