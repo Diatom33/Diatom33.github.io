@@ -376,6 +376,11 @@
     <div class="container">
         <header class="header">
             <nav class="personal-links">
+                <a href="https://scholar.google.com/citations?user=nemVUsgAAAAJ&hl=en" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar"
+                        class="link-icon">
+                    Scholar
+                </a>
                 <a href="https://linkedin.com/in/alice-blair" target="_blank">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"
                         class="link-icon">
@@ -417,6 +422,13 @@
             <section class="coverage-section">
                 <h3>Additional Coverage & Links</h3>
                 <div class="coverage-grid">
+                    <div class="coverage-item">
+                        <h4><a href="https://www.remotelabor.ai/" target="_blank">Remote Labor Index: Measuring AI
+                                Automation of Remote Work</a></h4>
+                        <p>I co-authored a paper introducing the Remote Labor Index (RLI), a benchmark comprising over
+                            6,000 hours of professional remote work projects. Read the paper at <a
+                                href="https://www.remotelabor.ai/" target="_blank">remotelabor.ai</a></p>
+                    </div>
                     <div class="coverage-item">
                         <h4><a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
                                 target="_blank">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
@@ -515,7 +527,7 @@
         // Format date for display with absolute timestamps in San Francisco time
         function formatDate(dateString) {
             const date = new Date(dateString);
-            
+
             // Format with San Francisco time zone
             return date.toLocaleDateString('en-US', {
                 timeZone: 'America/Los_Angeles',
@@ -531,12 +543,12 @@
         // Strip HTML and truncate description text
         function truncateText(text, maxLength = 150) {
             if (!text) return '';
-            
+
             // Strip HTML tags and decode HTML entities
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = text;
             const plainText = tempDiv.textContent || tempDiv.innerText || '';
-            
+
             if (plainText.length <= maxLength) return plainText;
             return plainText.substring(0, maxLength).trim() + '...';
         }
@@ -584,55 +596,12 @@
             } catch (error) {
                 console.error('Error loading RSS feed:', error);
 
-                // Fallback to example data
-                lastUpdatedElement.textContent = 'Using example data';
+                // Show simple error message
+                lastUpdatedElement.textContent = 'Unable to load feed';
                 feedContainer.innerHTML = `
-                    <div class="error">Could not load live feed. Showing example data.</div>
-                    ${getExampleFeedHTML()}
+                    <div class="loading">Feed temporarily unavailable. Please check back later.</div>
                 `;
             }
-        }
-
-        // Generate example feed HTML
-        function getExampleFeedHTML() {
-            const exampleItems = [
-                {
-                    title: "Latest Project Update: New Feature Release",
-                    link: "https://yourblog.com/post1",
-                    description: "Exciting new features have been added to the project, improving user experience and performance.",
-                    source: "Blog",
-                    pubDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-                    author: "Your Name"
-                },
-                {
-                    title: "Speaking at Tech Conference 2025",
-                    link: "https://conference.com/speaker/you",
-                    description: "Excited to announce my upcoming speaking engagement at the annual tech conference.",
-                    source: "Events",
-                    pubDate: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
-                    author: "Conference Team"
-                },
-                {
-                    title: "Open Source Contribution Milestone",
-                    link: "https://github.com/project/milestone",
-                    description: "Reached an important milestone in open source contributions with the latest pull request.",
-                    source: "GitHub",
-                    pubDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
-                    author: "Your Name"
-                }
-            ];
-
-            return exampleItems.map(item => `
-                <div class="feed-item">
-                    <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
-                    <div class="feed-description">${item.description}</div>
-                    <div class="feed-meta">
-                        <span class="feed-source">${item.source}</span>
-                        <span>${formatDate(item.pubDate)}</span>
-                        <span>by ${item.author}</span>
-                    </div>
-                </div>
-            `).join('');
         }
 
         // Initialize the page
