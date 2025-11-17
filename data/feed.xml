@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 17 Nov 2025 06:27:52 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Nov 2025 12:36:46 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[In-Context Writing with Sonnet 4.5]]></title>
+      <link>https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5</link>
+      <description><![CDATA[<p><i>All of the writ­ing in this post is my own, with­out any LLM in­put.</i></p><p>We’ve already seen a bit of how Claude Son­net 4.5 does with <a href="/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction">writ­ing fic­tion</a> (bet­ter than pre­vi­ous mod­els, but not quite good yet......]]></description>
+      <pubDate>Mon, 17 Nov 2025 07:51:38 GMT</pubDate>
+      <guid>LmxaJQya85ESDo9LF</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[AISN #65: Measuring Automation and Superintelligence Moratorium Letter]]></title>
       <link>https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence</link>
@@ -86,15 +95,6 @@
       <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
-    </item>
-    <item>
-      <title><![CDATA[Being Handed Puzzles]]></title>
-      <link>https://www.lesswrong.com/posts/fe2zc6wKbFvjChrkg/being-handed-puzzles</link>
-      <description><![CDATA[<p>I wanted to write a fol­low-up post to <a href="/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles">Hand­ing Peo­ple Puz­zles</a>, since I thought it was a re­ally fun post to make, and I’m get­ting into the spirit for at­tend­ing the <a href="https://partiful.com/e/IXtPgYsBoAaGeybbvWRh?f=1">Me­t......]]></description>
-      <pubDate>Mon, 08 Sep 2025 06:44:11 GMT</pubDate>
-      <guid>fe2zc6wKbFvjChrkg</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
     </item>
   </channel>
 </rss>
