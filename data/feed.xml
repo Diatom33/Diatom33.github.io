@@ -3,9 +3,27 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Wed, 19 Nov 2025 18:26:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 01:18:35 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[MLSN #17: Measuring General AI Abilities and Mitigating Deception]]></title>
+      <link>https://www.lesswrong.com/posts/kmu8y5beCEHHz783k/mlsn-17-measuring-general-ai-abilities-and-mitigating</link>
+      <description><![CDATA[<p>TLDR: New met­rics say that fron­tier AIs get 57% on tests for gen­eral in­tel­li­gence and are able to do 2.5% of re­mote free­lance-type work.</p><p>Many bench­marks mea­sure AIs on use­ful knowl­edge and abil­ities, but there is a mea­sure­ment gap around some of the most im­por­tant ca­pa­......]]></description>
+      <pubDate>Wed, 19 Nov 2025 20:11:53 GMT</pubDate>
+      <guid>kmu8y5beCEHHz783k</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[MLSN #17: Measuring General AI Abilities and Mitigating Deception]]></title>
+      <link>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</link>
+      <description><![CDATA[Measuring General AI Abilities...]]></description>
+      <pubDate>Wed, 19 Nov 2025 20:00:57 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
+    </item>
     <item>
       <title><![CDATA[In-Context Writing with Sonnet 4.5]]></title>
       <link>https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5</link>
@@ -77,24 +95,6 @@
       <guid>QrhohmahGrztEebmY</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Warmth, Light, Flame]]></title>
-      <link>https://www.lesswrong.com/posts/MkybGEeFvh4srkWos/warmth-light-flame</link>
-      <description><![CDATA[<p><i>I’m steal­ing this ter­minol­ogy from Eliezer (</i><a href="https://glowfic.com/replies/1942496#reply-1942496"><i>from planecrash</i></a><i>, heavy spoilers), but mod­ify­ing them to point at con­cepts that I think those words more nat­u­rally evoke for me.</i></p><p><i>This post con­tains ......]]></description>
-      <pubDate>Mon, 22 Sep 2025 04:19:48 GMT</pubDate>
-      <guid>MkybGEeFvh4srkWos</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[ML Safety Newsletter #16]]></title>
-      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</link>
-      <description><![CDATA[Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming...]]></description>
-      <pubDate>Fri, 12 Sep 2025 16:30:32 GMT</pubDate>
-      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</guid>
-      <category>Newsletter</category>
-      <source>Newsletter</source>
     </item>
   </channel>
 </rss>
