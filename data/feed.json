@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-11-19T18:26:12.945Z",
+    "lastUpdated": "2025-11-20T01:18:35.956Z",
     "totalItems": 10,
     "sources": [
       {
@@ -25,6 +25,30 @@
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "MLSN #17: Measuring General AI Abilities and Mitigating Deception",
+      "link": "https://www.lesswrong.com/posts/kmu8y5beCEHHz783k/mlsn-17-measuring-general-ai-abilities-and-mitigating",
+      "description": "<p>TLDR: New met­rics say that fron­tier AIs get 57% on tests for gen­eral in­tel­li­gence and are able to do 2.5% of re­mote free­lance-type work.</p><p>Many bench­marks mea­sure AIs on use­ful knowl­edge and abil­ities, but there is a mea­sure­ment gap around some of the most im­por­tant ca­pa­...",
+      "pubDate": "Wed, 19 Nov 2025 20:11:53 +0000",
+      "isoDate": "2025-11-19T20:11:53.000Z",
+      "author": "Alice Blair",
+      "guid": "kmu8y5beCEHHz783k",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "MLSN #17: Measuring General AI Abilities and Mitigating Deception",
+      "link": "https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities",
+      "description": "Measuring General AI Abilities",
+      "pubDate": "Wed, 19 Nov 2025 20:00:57 GMT",
+      "isoDate": "2025-11-19T20:00:57.000Z",
+      "author": "Alice Blair",
+      "guid": "https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
+    },
     {
       "title": "In-Context Writing with Sonnet 4.5",
       "link": "https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5",
@@ -120,30 +144,6 @@
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Warmth, Light, Flame",
-      "link": "https://www.lesswrong.com/posts/MkybGEeFvh4srkWos/warmth-light-flame",
-      "description": "<p><i>I’m steal­ing this ter­minol­ogy from Eliezer (</i><a href=\"https://glowfic.com/replies/1942496#reply-1942496\"><i>from planecrash</i></a><i>, heavy spoilers), but mod­ify­ing them to point at con­cepts that I think those words more nat­u­rally evoke for me.</i></p><p><i>This post con­tains ...",
-      "pubDate": "Mon, 22 Sep 2025 04:19:48 +0000",
-      "isoDate": "2025-09-22T04:19:48.000Z",
-      "author": "Alice Blair",
-      "guid": "MkybGEeFvh4srkWos",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "ML Safety Newsletter #16",
-      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
-      "description": "Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming",
-      "pubDate": "Fri, 12 Sep 2025 16:30:32 GMT",
-      "isoDate": "2025-09-12T16:30:32.000Z",
-      "author": "Alice Blair",
-      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
-      "category": "Newsletter",
-      "source": "Newsletter",
-      "feedTitle": "ML Safety Newsletter"
     }
   ]
 }
