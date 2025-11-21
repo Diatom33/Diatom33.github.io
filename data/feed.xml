@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Thu, 20 Nov 2025 18:25:53 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 21 Nov 2025 01:19:32 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Gemini 3 is Evaluation-Paranoid and Contaminated]]></title>
+      <link>https://www.lesswrong.com/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated</link>
+      <description><![CDATA[<p> <i>TL;DR: Gem­ini 3 fre­quently thinks it is in an eval­u­a­tion when it is not, as­sum­ing that all of its re­al­ity is fabri­cated. It can also re­li­ably out­put the </i><a href="https://github.com/google/BIG-bench"><i>BIG-bench</i></a><i> ca­nary string, in­di­cat­ing that Google likely t......]]></description>
+      <pubDate>Thu, 20 Nov 2025 21:02:24 GMT</pubDate>
+      <guid>8uKQyjrAgCcWpfmcs</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[MLSN #17: Measuring General AI Abilities and Mitigating Deception]]></title>
       <link>https://www.lesswrong.com/posts/kmu8y5beCEHHz783k/mlsn-17-measuring-general-ai-abilities-and-mitigating</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>Ex­panded and gen­er­al­ized ver­sion of </i><a href="/posts/eukutrwGBPutoQoyM/alice-blair-s-shortform#comment-riwHkC6KnMpYpLFro"><i>this shortform</i></a></p><h1>Mo­ti­va­tion: Typ­ing Fast</h1><p>Part of my writ­ing pro­cess in­volves get­ting words out of my head and into a text ed­i­tor......]]></description>
       <pubDate>Mon, 29 Sep 2025 06:31:44 GMT</pubDate>
       <guid>YTfXJzrzWGj8mjQ2t</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[IABIED is on the NYT bestseller list]]></title>
-      <link>https://www.lesswrong.com/posts/QrhohmahGrztEebmY/iabied-is-on-the-nyt-bestseller-list</link>
-      <description><![CDATA[<p><a href="https://ifanyonebuildsit.com/">If Any­one Builds it, Every­one Dies</a> is cur­rently #7 on the <a href="https://www.nytimes.com/books/best-sellers/combined-print-and-e-book-nonfiction/">Com­bined Print and E-Book Non­fic­tion cat­e­gory</a>, and #8 on the <a href="https://www.nytimes......]]></description>
-      <pubDate>Thu, 25 Sep 2025 02:32:54 GMT</pubDate>
-      <guid>QrhohmahGrztEebmY</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
