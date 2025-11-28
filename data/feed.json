@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-11-28T18:24:48.856Z",
+    "lastUpdated": "2025-11-28T22:04:38.898Z",
     "totalItems": 10,
     "sources": [
       {
@@ -33,18 +33,6 @@
       "isoDate": "2025-11-20T21:02:24.000Z",
       "author": "Alice Blair",
       "guid": "8uKQyjrAgCcWpfmcs",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "MLSN #17: Measuring General AI Abilities and Mitigating Deception",
-      "link": "https://www.lesswrong.com/posts/kmu8y5beCEHHz783k/mlsn-17-measuring-general-ai-abilities-and-mitigating",
-      "description": "<p>TLDR: New met­rics say that fron­tier AIs get 57% on tests for gen­eral in­tel­li­gence and are able to do 2.5% of re­mote free­lance-type work.</p><p>Many bench­marks mea­sure AIs on use­ful knowl­edge and abil­ities, but there is a mea­sure­ment gap around some of the most im­por­tant ca­pa­...",
-      "pubDate": "Wed, 19 Nov 2025 20:11:53 +0000",
-      "isoDate": "2025-11-19T20:11:53.000Z",
-      "author": "Alice Blair",
-      "guid": "kmu8y5beCEHHz783k",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
@@ -141,6 +129,18 @@
       "isoDate": "2025-09-29T06:31:44.000Z",
       "author": "Alice Blair",
       "guid": "YTfXJzrzWGj8mjQ2t",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "IABIED is on the NYT bestseller list",
+      "link": "https://www.lesswrong.com/posts/QrhohmahGrztEebmY/iabied-is-on-the-nyt-bestseller-list",
+      "description": "<p><a href=\"https://ifanyonebuildsit.com/\">If Any­one Builds it, Every­one Dies</a> is cur­rently #7 on the <a href=\"https://www.nytimes.com/books/best-sellers/combined-print-and-e-book-nonfiction/\">Com­bined Print and E-Book Non­fic­tion cat­e­gory</a>, and #8 on the <a href=\"https://www.nytimes...",
+      "pubDate": "Thu, 25 Sep 2025 02:32:54 +0000",
+      "isoDate": "2025-09-25T02:32:54.000Z",
+      "author": "Alice Blair",
+      "guid": "QrhohmahGrztEebmY",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
