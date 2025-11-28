@@ -56,6 +56,38 @@ async function fetchFeed(feedConfig) {
                 console.log(`Cleaned title: "${item.title}" -> "${cleanedTitle}"`);
             }
 
+            return {
+                ...item,
+                originalTitle: item.title,
+                cleanedTitle: cleanedTitle,
+                transformedLink: transformedLink,
+                transformedGuid: transformedGuid
+            };
+        });
+
+        // Filter out LessWrong posts that are ML Safety Newsletter crossposts (start with "MLSN")
+        if (feedConfig.name === 'LessWrong') {
+            const beforeFilterCount = items.length;
+            items = items.filter(item => {
+                const title = item.cleanedTitle || item.originalTitle || item.title;
+                const isMLSNPost = title.startsWith('MLSN');
+                if (isMLSNPost) {
+                    console.log(`Filtering out LessWrong ML Safety Newsletter crosspost: "${title}"`);
+                }
+                return !isMLSNPost;
+            });
+            if (beforeFilterCount !== items.length) {
+                console.log(`Filtered ${beforeFilterCount - items.length} ML Safety Newsletter crossposts from LessWrong feed`);
+            }
+        }
+
+        // Now map to final format
+        items = items.map(item => {
+            const cleanedTitle = item.cleanedTitle;
+            const transformedLink = item.transformedLink;
+            const transformedGuid = item.transformedGuid;
+            const originalLink = item.link;
+
             // Log link transformations for debugging
             if (originalLink && originalLink !== transformedLink) {
                 console.log(`Transformed link: ${originalLink} -> ${transformedLink}`);

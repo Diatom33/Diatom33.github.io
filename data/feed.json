@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2025-11-14T22:06:03.125Z",
+    "lastUpdated": "2025-11-28T21:45:31.824Z",
     "totalItems": 10,
     "sources": [
       {
@@ -20,15 +20,47 @@
         "category": "Newsletter",
         "name": "Newsletter",
         "dateFilter": "2025-05-01T00:00:00.000Z"
-      },
-      {
-        "name": "arXiv",
-        "category": "arXiv"
       }
     ],
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "Gemini 3 is Evaluation-Paranoid and Contaminated",
+      "link": "https://www.lesswrong.com/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated",
+      "description": "<p> <i>TL;DR: Gem­ini 3 fre­quently thinks it is in an eval­u­a­tion when it is not, as­sum­ing that all of its re­al­ity is fabri­cated. It can also re­li­ably out­put the </i><a href=\"https://github.com/google/BIG-bench\"><i>BIG-bench</i></a><i> ca­nary string, in­di­cat­ing that Google likely t...",
+      "pubDate": "Thu, 20 Nov 2025 21:02:24 +0000",
+      "isoDate": "2025-11-20T21:02:24.000Z",
+      "author": "Alice Blair",
+      "guid": "8uKQyjrAgCcWpfmcs",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "MLSN #17: Measuring General AI Abilities and Mitigating Deception",
+      "link": "https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities",
+      "description": "Measuring General AI Abilities",
+      "pubDate": "Wed, 19 Nov 2025 20:00:57 GMT",
+      "isoDate": "2025-11-19T20:00:57.000Z",
+      "author": "Alice Blair",
+      "guid": "https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
+    },
+    {
+      "title": "In-Context Writing with Sonnet 4.5",
+      "link": "https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5",
+      "description": "<p><i>All of the writ­ing in this post is my own, with­out any LLM in­put.</i></p><p>We’ve already seen a bit of how Claude Son­net 4.5 does with <a href=\"/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction\">writ­ing fic­tion</a> (bet­ter than pre­vi­ous mod­els, but not quite good yet...",
+      "pubDate": "Mon, 17 Nov 2025 07:51:38 +0000",
+      "isoDate": "2025-11-17T07:51:38.000Z",
+      "author": "Alice Blair",
+      "guid": "LmxaJQya85ESDo9LF",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
     {
       "title": "AISN #65: Measuring Automation and Superintelligence Moratorium Letter",
       "link": "https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence",
@@ -109,42 +141,6 @@
       "isoDate": "2025-09-25T02:32:54.000Z",
       "author": "Alice Blair",
       "guid": "QrhohmahGrztEebmY",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Warmth, Light, Flame",
-      "link": "https://www.lesswrong.com/posts/MkybGEeFvh4srkWos/warmth-light-flame",
-      "description": "<p><i>I’m steal­ing this ter­minol­ogy from Eliezer (</i><a href=\"https://glowfic.com/replies/1942496#reply-1942496\"><i>from planecrash</i></a><i>, heavy spoilers), but mod­ify­ing them to point at con­cepts that I think those words more nat­u­rally evoke for me.</i></p><p><i>This post con­tains ...",
-      "pubDate": "Mon, 22 Sep 2025 04:19:48 +0000",
-      "isoDate": "2025-09-22T04:19:48.000Z",
-      "author": "Alice Blair",
-      "guid": "MkybGEeFvh4srkWos",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "ML Safety Newsletter #16",
-      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
-      "description": "Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming",
-      "pubDate": "Fri, 12 Sep 2025 16:30:32 GMT",
-      "isoDate": "2025-09-12T16:30:32.000Z",
-      "author": "Alice Blair",
-      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
-      "category": "Newsletter",
-      "source": "Newsletter",
-      "feedTitle": "ML Safety Newsletter"
-    },
-    {
-      "title": "Being Handed Puzzles",
-      "link": "https://www.lesswrong.com/posts/fe2zc6wKbFvjChrkg/being-handed-puzzles",
-      "description": "<p>I wanted to write a fol­low-up post to <a href=\"/posts/xRZfpYkC9MwqG4tKi/handing-people-puzzles\">Hand­ing Peo­ple Puz­zles</a>, since I thought it was a re­ally fun post to make, and I’m get­ting into the spirit for at­tend­ing the <a href=\"https://partiful.com/e/IXtPgYsBoAaGeybbvWRh?f=1\">Me­t...",
-      "pubDate": "Mon, 08 Sep 2025 06:44:11 +0000",
-      "isoDate": "2025-09-08T06:44:11.000Z",
-      "author": "Alice Blair",
-      "guid": "fe2zc6wKbFvjChrkg",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
