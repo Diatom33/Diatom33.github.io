@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Mon, 29 Dec 2025 06:31:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 12:40:12 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[The Weakest Model in the Selector]]></title>
+      <link>https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector</link>
+      <description><![CDATA[<p>A chain is only as strong un­der ten­sion as its weak­est link, and an AI chat sys­tem is, un­der nor­mal de­sign choices, as se­cure as the weak­est model in the se­lec­tor. While this is rel­a­tively easy to miti­gate, An­thropic is the only chat ser­vice I know of that ac­tu­ally pre­vents ......]]></description>
+      <pubDate>Mon, 29 Dec 2025 06:55:34 GMT</pubDate>
+      <guid>JzLa7ftrPphGahCKt</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[In Favor of Inkhaven-But-Less]]></title>
       <link>https://www.lesswrong.com/posts/kYzYTqmuZtA3bqL3K/in-favor-of-inkhaven-but-less</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><a href="/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon"><i>Pre­vi­ous Post</i></a>—for con­text on how I dis­cuss util­i­tar­i­anism for this se­quence, read this.</p><h1>The Literal Meaning</h1><p>Many peo­ple have heard of <a href="https://en.wikipedia.org/wiki/......]]></description>
       <pubDate>Mon, 20 Oct 2025 04:17:45 GMT</pubDate>
       <guid>FGEHXmK4EnXK6A6tA</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Sublinear Utility in Population and other Uncommon Utilitarianism]]></title>
-      <link>https://www.lesswrong.com/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon</link>
-      <description><![CDATA[<p><i>Con­tent warn­ing: An­throp­ics, Mo­ral Philos­o­phy, and Shrimp</i></p><p><i>This post isn’t try­ing to be self con­tained, since I have so many dis­parate thoughts about this. In­stead, I’m try­ing to put a rep­re­sen­ta­tive set of ideas for­ward, and I hope that if peo­ple are in­ter­es......]]></description>
-      <pubDate>Mon, 13 Oct 2025 06:19:52 GMT</pubDate>
-      <guid>NRxn6R2tesRzzTBKG</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
