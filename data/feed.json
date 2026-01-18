@@ -2,13 +2,13 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2026-01-18T06:28:13.041Z",
-    "totalItems": 10,
+    "lastUpdated": "2026-01-18T12:35:51.511Z",
+    "totalItems": 4,
     "sources": [
       {
-        "title": "Alice Blair's Posts - LessWrong 2.0 viewer",
-        "description": "Alice Blair's Posts - LessWrong 2.0 viewer",
-        "link": "https://www.greaterwrong.com/",
+        "title": "Error: LessWrong",
+        "description": "Failed to fetch feed",
+        "link": "https://www.greaterwrong.com/users/alice-blair?show=posts&format=rss",
         "category": "LessWrong",
         "name": "LessWrong",
         "dateFilter": null
@@ -26,66 +26,6 @@
   },
   "items": [
     {
-      "title": "The Weakest Model in the Selector",
-      "link": "https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector",
-      "description": "<p>A chain is only as strong un­der ten­sion as its weak­est link, and an AI chat sys­tem is, un­der nor­mal de­sign choices, as se­cure as the weak­est model in the se­lec­tor. While this is rel­a­tively easy to miti­gate, An­thropic is the only chat ser­vice I know of that ac­tu­ally pre­vents ...",
-      "pubDate": "Mon, 29 Dec 2025 06:55:34 +0000",
-      "isoDate": "2025-12-29T06:55:34.000Z",
-      "author": "Alice Blair",
-      "guid": "JzLa7ftrPphGahCKt",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "In Favor of Inkhaven-But-Less",
-      "link": "https://www.lesswrong.com/posts/kYzYTqmuZtA3bqL3K/in-favor-of-inkhaven-but-less",
-      "description": "<p>One of the main com­plaints I heard about the <a href=\"/posts/CA6XfmzYoGFWNhH8e/the-inkhaven-residency\">Inkaven Res­i­dency</a> is that it put too much pres­sure on peo­ple to write too quickly. The fel­low­ship was based on the premise that peo­ple who pub­lish ev­ery day have his­tor­i­cally...",
-      "pubDate": "Sat, 13 Dec 2025 23:16:11 +0000",
-      "isoDate": "2025-12-13T23:16:11.000Z",
-      "author": "Alice Blair",
-      "guid": "kYzYTqmuZtA3bqL3K",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Reasons to care about Canary Strings",
-      "link": "https://www.lesswrong.com/posts/QYdNfqfFAeMHXTHkP/reasons-to-care-about-canary-strings",
-      "description": "<p>This post is a fol­low-up to my <a href=\"/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated\">re­cent post</a> on eval­u­a­tion para­noia and bench­mark con­tam­i­na­tion in Gem­ini 3. There was a lot of in­ter­est­ing dis­cus­sion about ca­nary strings in the com­ments t...",
-      "pubDate": "Fri, 05 Dec 2025 21:41:34 +0000",
-      "isoDate": "2025-12-05T21:41:34.000Z",
-      "author": "Alice Blair",
-      "guid": "QYdNfqfFAeMHXTHkP",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Slack Observability",
-      "link": "https://www.lesswrong.com/posts/52FMSsLhBGFGhPL7J/slack-observability",
-      "description": "<p>Once upon a time, I took a park­our class. One day, there was a les­son on how to jump safely, and more im­por­tanty, how to <i>land</i> safely. The in­struc­tor climbed up on top of a tall box and jumped down, bend­ing his knees into a deep squat, ab­sorb­ing the im­pact like a spring.</p><p>...",
-      "pubDate": "Mon, 01 Dec 2025 07:52:59 +0000",
-      "isoDate": "2025-12-01T07:52:59.000Z",
-      "author": "Alice Blair",
-      "guid": "52FMSsLhBGFGhPL7J",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Gemini 3 is Evaluation-Paranoid and Contaminated",
-      "link": "https://www.lesswrong.com/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated",
-      "description": "<p> <i>TL;DR: Gem­ini 3 fre­quently thinks it is in an eval­u­a­tion when it is not, as­sum­ing that all of its re­al­ity is fabri­cated. It can also re­li­ably out­put the </i><a href=\"https://github.com/google/BIG-bench\"><i>BIG-bench</i></a><i> ca­nary string, in­di­cat­ing that Google likely t...",
-      "pubDate": "Thu, 20 Nov 2025 21:02:24 +0000",
-      "isoDate": "2025-11-20T21:02:24.000Z",
-      "author": "Alice Blair",
-      "guid": "8uKQyjrAgCcWpfmcs",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
       "title": "MLSN #17: Measuring General AI Abilities and Mitigating Deception",
       "link": "https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities",
       "description": "Measuring General AI Abilities",
@@ -98,52 +38,40 @@
       "feedTitle": "ML Safety Newsletter"
     },
     {
-      "title": "In-Context Writing with Sonnet 4.5",
-      "link": "https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5",
-      "description": "<p><i>All of the writ­ing in this post is my own, with­out any LLM in­put.</i></p><p>We’ve already seen a bit of how Claude Son­net 4.5 does with <a href=\"/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction\">writ­ing fic­tion</a> (bet­ter than pre­vi­ous mod­els, but not quite good yet...",
-      "pubDate": "Mon, 17 Nov 2025 07:51:38 +0000",
-      "isoDate": "2025-11-17T07:51:38.000Z",
+      "title": "ML Safety Newsletter #16",
+      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
+      "description": "Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming",
+      "pubDate": "Fri, 12 Sep 2025 16:30:32 GMT",
+      "isoDate": "2025-09-12T16:30:32.000Z",
       "author": "Alice Blair",
-      "guid": "LmxaJQya85ESDo9LF",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-16",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
     },
     {
-      "title": "AISN #65: Measuring Automation and Superintelligence Moratorium Letter",
-      "link": "https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence",
-      "description": "<p>Wel­come to the AI Safety Newslet­ter by the <a href=\"https://www.safe.ai/\">Cen­ter for AI Safety</a>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired.</p><p>In this edi­tion: A new bench­mark mea­sures AI au­toma­tion; 50,000 peo­ple, in­clud­ing top AI s...",
-      "pubDate": "Wed, 29 Oct 2025 16:05:26 +0000",
-      "isoDate": "2025-10-29T16:05:26.000Z",
+      "title": "ML Safety Newsletter #15",
+      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-15",
+      "description": "Risks in Agentic Computer Use, Goal Drift, Shutdown Resistance, and Critiques of Scheming Research",
+      "pubDate": "Mon, 18 Aug 2025 17:08:04 GMT",
+      "isoDate": "2025-08-18T17:08:04.000Z",
       "author": "Alice Blair",
-      "guid": "wD8tdEbtMSrcSfJmM",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-15",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
     },
     {
-      "title": "Uncommon Utilitarianism #3: Bounded Utility Functions",
-      "link": "https://www.lesswrong.com/posts/jvXF88XmqtsR7uE4w/uncommon-utilitarianism-3-bounded-utility-functions",
-      "description": "<p><a href=\"/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism\">Pre­vi­ous Post</a></p><p>For con­text on how I dis­cuss util­i­tar­i­anism in this se­quence, read the <a href=\"/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon\">first post</a>.</p>...",
-      "pubDate": "Mon, 27 Oct 2025 05:06:25 +0000",
-      "isoDate": "2025-10-27T05:06:25.000Z",
+      "title": "ML Safety Newsletter #14",
+      "link": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-14",
+      "description": "Resisting Prompt Injection, Evaluating Cyberattack Capabilities, and SafeBench Winners",
+      "pubDate": "Wed, 07 May 2025 16:02:03 GMT",
+      "isoDate": "2025-05-07T16:02:03.000Z",
       "author": "Alice Blair",
-      "guid": "jvXF88XmqtsR7uE4w",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "Uncommon Utilitarianism #2: Positive Utilitarianism",
-      "link": "https://www.lesswrong.com/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism",
-      "description": "<p><a href=\"/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon\"><i>Pre­vi­ous Post</i></a>—for con­text on how I dis­cuss util­i­tar­i­anism for this se­quence, read this.</p><h1>The Literal Meaning</h1><p>Many peo­ple have heard of <a href=\"https://en.wikipedia.org/wiki/...",
-      "pubDate": "Mon, 20 Oct 2025 04:17:45 +0000",
-      "isoDate": "2025-10-20T04:17:45.000Z",
-      "author": "Alice Blair",
-      "guid": "FGEHXmK4EnXK6A6tA",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+      "guid": "https://newsletter.mlsafety.org/p/ml-safety-newsletter-14",
+      "category": "Newsletter",
+      "source": "Newsletter",
+      "feedTitle": "ML Safety Newsletter"
     }
   ]
 }
