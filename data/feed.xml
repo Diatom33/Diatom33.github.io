@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Tue, 20 Jan 2026 12:44:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 18:32:36 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[MLSN #18: Adversarial Diffusion, Activation Oracles, Weird Generalization]]></title>
+      <link>https://newsletter.mlsafety.org/p/mlsn-18-adversarial-diffusion-activation</link>
+      <description><![CDATA[Diffusion LLMs for Adversarial Attack Generation...]]></description>
+      <pubDate>Tue, 20 Jan 2026 17:01:52 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/mlsn-18-adversarial-diffusion-activation</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
+    </item>
     <item>
       <title><![CDATA[The Weakest Model in the Selector]]></title>
       <link>https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><a href="/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism">Pre­vi­ous Post</a></p><p>For con­text on how I dis­cuss util­i­tar­i­anism in this se­quence, read the <a href="/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon">first post</a>.</p>......]]></description>
       <pubDate>Mon, 27 Oct 2025 05:06:25 GMT</pubDate>
       <guid>jvXF88XmqtsR7uE4w</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[Uncommon Utilitarianism #2: Positive Utilitarianism]]></title>
-      <link>https://www.lesswrong.com/posts/FGEHXmK4EnXK6A6tA/uncommon-utilitarianism-2-positive-utilitarianism</link>
-      <description><![CDATA[<p><a href="/posts/NRxn6R2tesRzzTBKG/sublinear-utility-in-population-and-other-uncommon"><i>Pre­vi­ous Post</i></a>—for con­text on how I dis­cuss util­i­tar­i­anism for this se­quence, read this.</p><h1>The Literal Meaning</h1><p>Many peo­ple have heard of <a href="https://en.wikipedia.org/wiki/......]]></description>
-      <pubDate>Mon, 20 Oct 2025 04:17:45 GMT</pubDate>
-      <guid>FGEHXmK4EnXK6A6tA</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
