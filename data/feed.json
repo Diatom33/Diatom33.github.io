@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2026-03-13T12:54:01.013Z",
+    "lastUpdated": "2026-03-13T18:37:39.322Z",
     "totalItems": 10,
     "sources": [
       {
@@ -25,6 +25,18 @@
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "AI Safety Newsletter #69: Department of War, Anthropic, and National Security",
+      "link": "https://www.lesswrong.com/posts/FrYtSGFupQgLvLuGB/ai-safety-newsletter-69-department-of-war-anthropic-and",
+      "description": "<p><i><span>Also, An­thropic Re­moves a Core Safety Commitment</span></i></p><p><span>Wel­come to the AI Safety Newslet­ter by the </span><a href=\"https://safe.ai/\"><span>Cen­ter for AI Safety</span></a><span>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired....",
+      "pubDate": "Fri, 13 Mar 2026 16:05:47 +0000",
+      "isoDate": "2026-03-13T16:05:47.000Z",
+      "author": "Alice Blair",
+      "guid": "FrYtSGFupQgLvLuGB",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
     {
       "title": "MLSN #19: Honesty, Disempowerment, & Cybersecurity",
       "link": "https://newsletter.mlsafety.org/p/mlsn-19-honesty-disempowerment-and",
@@ -129,18 +141,6 @@
       "isoDate": "2025-11-17T07:51:38.000Z",
       "author": "Alice Blair",
       "guid": "LmxaJQya85ESDo9LF",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
-    {
-      "title": "AISN #65: Measuring Automation and Superintelligence Moratorium Letter",
-      "link": "https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence",
-      "description": "<p>Wel­come to the AI Safety Newslet­ter by the <a href=\"https://www.safe.ai/\">Cen­ter for AI Safety</a>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired.</p><p>In this edi­tion: A new bench­mark mea­sures AI au­toma­tion; 50,000 peo­ple, in­clud­ing top AI s...",
-      "pubDate": "Wed, 29 Oct 2025 16:05:26 +0000",
-      "isoDate": "2025-10-29T16:05:26.000Z",
-      "author": "Alice Blair",
-      "guid": "wD8tdEbtMSrcSfJmM",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
