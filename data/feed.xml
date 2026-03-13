@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Fri, 13 Mar 2026 12:54:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 18:37:39 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[AI Safety Newsletter #69: Department of War, Anthropic, and National Security]]></title>
+      <link>https://www.lesswrong.com/posts/FrYtSGFupQgLvLuGB/ai-safety-newsletter-69-department-of-war-anthropic-and</link>
+      <description><![CDATA[<p><i><span>Also, An­thropic Re­moves a Core Safety Commitment</span></i></p><p><span>Wel­come to the AI Safety Newslet­ter by the </span><a href="https://safe.ai/"><span>Cen­ter for AI Safety</span></a><span>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired.......]]></description>
+      <pubDate>Fri, 13 Mar 2026 16:05:47 GMT</pubDate>
+      <guid>FrYtSGFupQgLvLuGB</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[MLSN #19: Honesty, Disempowerment, & Cybersecurity]]></title>
       <link>https://newsletter.mlsafety.org/p/mlsn-19-honesty-disempowerment-and</link>
@@ -84,15 +93,6 @@
       <description><![CDATA[<p><i>All of the writ­ing in this post is my own, with­out any LLM in­put.</i></p><p>We’ve already seen a bit of how Claude Son­net 4.5 does with <a href="/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction">writ­ing fic­tion</a> (bet­ter than pre­vi­ous mod­els, but not quite good yet......]]></description>
       <pubDate>Mon, 17 Nov 2025 07:51:38 GMT</pubDate>
       <guid>LmxaJQya85ESDo9LF</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[AISN #65: Measuring Automation and Superintelligence Moratorium Letter]]></title>
-      <link>https://www.lesswrong.com/posts/wD8tdEbtMSrcSfJmM/aisn-65-measuring-automation-and-superintelligence</link>
-      <description><![CDATA[<p>Wel­come to the AI Safety Newslet­ter by the <a href="https://www.safe.ai/">Cen­ter for AI Safety</a>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired.</p><p>In this edi­tion: A new bench­mark mea­sures AI au­toma­tion; 50,000 peo­ple, in­clud­ing top AI s......]]></description>
-      <pubDate>Wed, 29 Oct 2025 16:05:26 GMT</pubDate>
-      <guid>wD8tdEbtMSrcSfJmM</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>
