@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Tue, 24 Mar 2026 13:06:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 18:59:45 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[AI Safety Newsletter #70: Automated Warfare and AI Layoffs]]></title>
+      <link>https://www.lesswrong.com/posts/hkuY78eHeknkn7LdP/ai-safety-newsletter-70-automated-warfare-and-ai-layoffs</link>
+      <description><![CDATA[<p><i><span>Also, a new open let­ter ad­vo­cat­ing for pro-hu­man val­ues and con­trol over AI development</span></i></p><p><span>Wel­come to the AI Safety Newslet­ter by the </span><a href="https://safe.ai/"><span>Cen­ter for AI Safety</span></a><span>. We dis­cuss de­vel­op­ments in AI and AI s......]]></description>
+      <pubDate>Tue, 24 Mar 2026 15:30:09 GMT</pubDate>
+      <guid>hkuY78eHeknkn7LdP</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[AI Safety Newsletter #69: Department of War, Anthropic, and National Security]]></title>
       <link>https://www.lesswrong.com/posts/FrYtSGFupQgLvLuGB/ai-safety-newsletter-69-department-of-war-anthropic-and</link>
@@ -86,15 +95,6 @@
       <guid>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
-    </item>
-    <item>
-      <title><![CDATA[In-Context Writing with Sonnet 4.5]]></title>
-      <link>https://www.lesswrong.com/posts/LmxaJQya85ESDo9LF/in-context-writing-with-sonnet-4-5</link>
-      <description><![CDATA[<p><i>All of the writ­ing in this post is my own, with­out any LLM in­put.</i></p><p>We’ve already seen a bit of how Claude Son­net 4.5 does with <a href="/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction">writ­ing fic­tion</a> (bet­ter than pre­vi­ous mod­els, but not quite good yet......]]></description>
-      <pubDate>Mon, 17 Nov 2025 07:51:38 GMT</pubDate>
-      <guid>LmxaJQya85ESDo9LF</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
     </item>
   </channel>
 </rss>
