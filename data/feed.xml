@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Fri, 10 Apr 2026 13:04:23 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 18:49:07 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[AISN #71: Cyberattacks & Datacenter Moratorium Bill]]></title>
+      <link>https://www.lesswrong.com/posts/LBYu36ZtmFyHBLJ44/aisn-71-cyberattacks-and-datacenter-moratorium-bill</link>
+      <description><![CDATA[<p><i><span>Also, up­dates on the An­thropic vs. Pen­tagon court case.</span></i></p><p><b><span>We’re Hiring.</span></b><span> Op­por­tu­ni­ties at CAIS in­clude:</span> <a href="https://jobs.lever.co/aisafety/5cc2f823-5757-4e00-b2d6-aaf9c832735d"><span>Head of Public En­gage­ment</span></a><spa......]]></description>
+      <pubDate>Fri, 10 Apr 2026 14:18:55 GMT</pubDate>
+      <guid>LBYu36ZtmFyHBLJ44</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
     <item>
       <title><![CDATA[AI Safety Newsletter #70: Automated Warfare and AI Layoffs]]></title>
       <link>https://www.lesswrong.com/posts/hkuY78eHeknkn7LdP/ai-safety-newsletter-70-automated-warfare-and-ai-layoffs</link>
@@ -86,15 +95,6 @@
       <guid>8uKQyjrAgCcWpfmcs</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[MLSN #17: Measuring General AI Abilities and Mitigating Deception]]></title>
-      <link>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</link>
-      <description><![CDATA[Measuring General AI Abilities...]]></description>
-      <pubDate>Wed, 19 Nov 2025 20:00:57 GMT</pubDate>
-      <guid>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</guid>
-      <category>Newsletter</category>
-      <source>Newsletter</source>
     </item>
   </channel>
 </rss>
