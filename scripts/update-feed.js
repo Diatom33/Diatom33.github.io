@@ -244,7 +244,8 @@ function createExampleData() {
         feedInfo: {
             title: "Example Feed",
             description: "Example RSS data",
-            category: "Example"
+            category: "Example",
+            name: "Example"
         },
         items: exampleItems
     }];
