@@ -283,6 +283,33 @@ function mergeFeeds(feedResults) {
     };
 }
 
+// Compare two item arrays for meaningful equality (ignoring ordering-preserved metadata)
+function itemsEqual(a, b) {
+    return JSON.stringify(a) === JSON.stringify(b);
+}
+
+// If the new feed's content matches the existing file on disk, preserve the old
+// lastUpdated timestamp so the written file is byte-identical to what's in git.
+// This lets the Actions workflow's `git diff --cached --quiet` check short-circuit
+// and skip the no-op commit it would otherwise create every 6 hours.
+async function preserveTimestampIfUnchanged(mergedFeed) {
+    const outputPath = path.join(OUTPUT_DIR, OUTPUT_FILE);
+    try {
+        const existing = await fs.readJson(outputPath);
+        const sameItems = itemsEqual(existing.items, mergedFeed.items);
+        const sameSources = itemsEqual(existing.meta && existing.meta.sources, mergedFeed.meta.sources);
+        if (sameItems && sameSources) {
+            console.log('Feed content unchanged — preserving previous lastUpdated to avoid a no-op commit.');
+            mergedFeed.meta.lastUpdated = existing.meta.lastUpdated;
+            return true;
+        }
+        console.log('Feed content changed — writing new lastUpdated timestamp.');
+    } catch (err) {
+        console.log(`No existing feed on disk (${err.code || err.message}); treating as new.`);
+    }
+    return false;
+}
+
 // Save merged feed to JSON file
 async function saveFeed(mergedFeed) {
     const outputPath = path.join(OUTPUT_DIR, OUTPUT_FILE);
@@ -311,7 +338,7 @@ async function generateRSSXML(mergedFeed) {
     <item>
       <title><![CDATA[${item.title}]]></title>
       <link>${item.link}</link>
-      <description><![CDATA[${item.description.substring(0, 500)}...]]></description>
+      <description><![CDATA[${item.description.length > 500 ? item.description.substring(0, 497) + '...' : item.description}]]></description>
       <pubDate>${new Date(item.isoDate || item.pubDate).toUTCString()}</pubDate>
       <guid>${item.guid || item.link}</guid>
       <category>${item.category}</category>
@@ -344,6 +371,10 @@ async function main() {
 
         // Merge feeds
         const mergedFeed = mergeFeeds(feedResults);
+
+        // If nothing changed, preserve the previous timestamp so the output file
+        // stays byte-identical and the workflow skips the commit.
+        await preserveTimestampIfUnchanged(mergedFeed);
 
         // Save merged feed
         await saveFeed(mergedFeed);
