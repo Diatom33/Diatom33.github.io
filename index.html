@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice Blair</title>
+    <script>
+        // Set theme before paint to avoid a flash of the wrong palette.
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', saved || sys);
+            } catch (_) { }
+        })();
+    </script>
     <style>
         :root {
             --bg-color: #ffffff;
