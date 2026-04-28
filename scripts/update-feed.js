@@ -65,12 +65,13 @@ async function fetchFeed(feedConfig) {
             };
         });
 
-        // Filter out LessWrong posts that are ML Safety Newsletter crossposts (start with "MLSN")
+        // Filter out LessWrong posts that are ML Safety Newsletter crossposts.
+        // Historically titled "MLSN #N", retitled to "ML Safety Newsletter #N" from #20 onward.
         if (feedConfig.name === 'LessWrong') {
             const beforeFilterCount = items.length;
             items = items.filter(item => {
                 const title = item.cleanedTitle || item.originalTitle || item.title;
-                const isMLSNPost = title.startsWith('MLSN');
+                const isMLSNPost = title.startsWith('MLSN') || title.startsWith('ML Safety Newsletter');
                 if (isMLSNPost) {
                     console.log(`Filtering out LessWrong ML Safety Newsletter crosspost: "${title}"`);
                 }
