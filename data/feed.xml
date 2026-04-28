@@ -3,18 +3,9 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Tue, 28 Apr 2026 19:28:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 19:26:29 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
-    <item>
-      <title><![CDATA[ML Safety Newsletter #20: AI Wellbeing, Classifier Jailbreaking and Honest Pushback Benchmarking]]></title>
-      <link>https://www.lesswrong.com/posts/GjnhrR65t3d7w7Bgt/ml-safety-newsletter-20-ai-wellbeing-classifier-jailbreaking</link>
-      <description><![CDATA[<p><i><span>TLDR: we mea­sure AIs’ ex­pres­sions of plea­sure and pain, find­ing con­sis­tent and sur­pris­ing prefer­ences.</span></i></p><p><span>AIs dis­play be­hav­iors that mimic hu­man emo­tions, such as at­tempt­ing to de­bug code and say­ing “EUREKA!” or “I am a failure…” At the Cen­ter f...]]></description>
-      <pubDate>Tue, 28 Apr 2026 19:16:07 GMT</pubDate>
-      <guid>GjnhrR65t3d7w7Bgt</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
     <item>
       <title><![CDATA[MLSN #20: AI Wellbeing, Classifier Jailbreaking and Honest Pushback Benchmarking]]></title>
       <link>https://newsletter.mlsafety.org/p/mlsn-20-ai-wellbeing-classifier-jailbreaking</link>
@@ -93,6 +84,15 @@
       <description><![CDATA[<p>This post is a fol­low-up to my <a href="/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated">re­cent post</a> on eval­u­a­tion para­noia and bench­mark con­tam­i­na­tion in Gem­ini 3. There was a lot of in­ter­est­ing dis­cus­sion about ca­nary strings in the com­ments t...]]></description>
       <pubDate>Fri, 05 Dec 2025 21:41:34 GMT</pubDate>
       <guid>QYdNfqfFAeMHXTHkP</guid>
+      <category>LessWrong</category>
+      <source>LessWrong</source>
+    </item>
+    <item>
+      <title><![CDATA[Slack Observability]]></title>
+      <link>https://www.lesswrong.com/posts/52FMSsLhBGFGhPL7J/slack-observability</link>
+      <description><![CDATA[<p>Once upon a time, I took a park­our class. One day, there was a les­son on how to jump safely, and more im­por­tanty, how to <i>land</i> safely. The in­struc­tor climbed up on top of a tall box and jumped down, bend­ing his knees into a deep squat, ab­sorb­ing the im­pact like a spring.</p><p>...]]></description>
+      <pubDate>Mon, 01 Dec 2025 07:52:59 GMT</pubDate>
+      <guid>52FMSsLhBGFGhPL7J</guid>
       <category>LessWrong</category>
       <source>LessWrong</source>
     </item>

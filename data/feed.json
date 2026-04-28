@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2026-04-28T19:28:33.479Z",
+    "lastUpdated": "2026-04-28T19:26:29.269Z",
     "totalItems": 10,
     "sources": [
       {
@@ -25,18 +25,6 @@
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
-    {
-      "title": "ML Safety Newsletter #20: AI Wellbeing, Classifier Jailbreaking and Honest Pushback Benchmarking",
-      "link": "https://www.lesswrong.com/posts/GjnhrR65t3d7w7Bgt/ml-safety-newsletter-20-ai-wellbeing-classifier-jailbreaking",
-      "description": "<p><i><span>TLDR: we mea­sure AIs’ ex­pres­sions of plea­sure and pain, find­ing con­sis­tent and sur­pris­ing prefer­ences.</span></i></p><p><span>AIs dis­play be­hav­iors that mimic hu­man emo­tions, such as at­tempt­ing to de­bug code and say­ing “EUREKA!” or “I am a failure…” At the Cen­ter f...",
-      "pubDate": "Tue, 28 Apr 2026 19:16:07 +0000",
-      "isoDate": "2026-04-28T19:16:07.000Z",
-      "author": "Alice Blair",
-      "guid": "GjnhrR65t3d7w7Bgt",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
-    },
     {
       "title": "MLSN #20: AI Wellbeing, Classifier Jailbreaking and Honest Pushback Benchmarking",
       "link": "https://newsletter.mlsafety.org/p/mlsn-20-ai-wellbeing-classifier-jailbreaking",
@@ -141,6 +129,18 @@
       "isoDate": "2025-12-05T21:41:34.000Z",
       "author": "Alice Blair",
       "guid": "QYdNfqfFAeMHXTHkP",
+      "category": "LessWrong",
+      "source": "LessWrong",
+      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
+    },
+    {
+      "title": "Slack Observability",
+      "link": "https://www.lesswrong.com/posts/52FMSsLhBGFGhPL7J/slack-observability",
+      "description": "<p>Once upon a time, I took a park­our class. One day, there was a les­son on how to jump safely, and more im­por­tanty, how to <i>land</i> safely. The in­struc­tor climbed up on top of a tall box and jumped down, bend­ing his knees into a deep squat, ab­sorb­ing the im­pact like a spring.</p><p>...",
+      "pubDate": "Mon, 01 Dec 2025 07:52:59 +0000",
+      "isoDate": "2025-12-01T07:52:59.000Z",
+      "author": "Alice Blair",
+      "guid": "52FMSsLhBGFGhPL7J",
       "category": "LessWrong",
       "source": "LessWrong",
       "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
