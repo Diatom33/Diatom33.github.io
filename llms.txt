@@ -6,12 +6,18 @@ I'm Alice, a technical AI safety writer. I write the [ML Safety Newsletter](http
 
 ## Links
 
+- [Google Scholar](https://scholar.google.com/citations?user=nemVUsgAAAAJ&hl=en)
 - [LinkedIn](https://linkedin.com/in/alice-blair)
-- [LessWrong](https://www.lesswrong.com/users/alice-blair)  
+- [LessWrong](https://www.lesswrong.com/users/alice-blair)
 - [Substack](https://substack.com/@aliceblair2)
 - [GitHub](https://github.com/Diatom33)
 
 ## Additional Coverage & Links
+
+### Remote Labor Index: Measuring AI Automation of Remote Work
+https://www.remotelabor.ai/
+
+I co-authored a paper introducing the Remote Labor Index (RLI), a benchmark comprising over 6,000 hours of professional remote work projects.
 
 ### Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT Students To Drop Out
 https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/
