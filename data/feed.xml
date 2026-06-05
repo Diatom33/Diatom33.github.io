@@ -3,7 +3,7 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Thu, 04 Jun 2026 03:44:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 19:50:41 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
     <item>
@@ -14,33 +14,6 @@
       <guid>https://newsletter.mlsafety.org/p/mlsn-20-ai-wellbeing-classifier-jailbreaking</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
-    </item>
-    <item>
-      <title><![CDATA[AISN #71: Cyberattacks & Datacenter Moratorium Bill]]></title>
-      <link>https://www.lesswrong.com/posts/LBYu36ZtmFyHBLJ44/aisn-71-cyberattacks-and-datacenter-moratorium-bill</link>
-      <description><![CDATA[<p><i><span>Also, up­dates on the An­thropic vs. Pen­tagon court case.</span></i></p><p><b><span>We’re Hiring.</span></b><span> Op­por­tu­ni­ties at CAIS in­clude:</span> <a href="https://jobs.lever.co/aisafety/5cc2f823-5757-4e00-b2d6-aaf9c832735d"><span>Head of Public En­gage­ment</span></a><spa...]]></description>
-      <pubDate>Fri, 10 Apr 2026 14:18:55 GMT</pubDate>
-      <guid>LBYu36ZtmFyHBLJ44</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[AI Safety Newsletter #70: Automated Warfare and AI Layoffs]]></title>
-      <link>https://www.lesswrong.com/posts/hkuY78eHeknkn7LdP/ai-safety-newsletter-70-automated-warfare-and-ai-layoffs</link>
-      <description><![CDATA[<p><i><span>Also, a new open let­ter ad­vo­cat­ing for pro-hu­man val­ues and con­trol over AI development</span></i></p><p><span>Wel­come to the AI Safety Newslet­ter by the </span><a href="https://safe.ai/"><span>Cen­ter for AI Safety</span></a><span>. We dis­cuss de­vel­op­ments in AI and AI s...]]></description>
-      <pubDate>Tue, 24 Mar 2026 15:30:09 GMT</pubDate>
-      <guid>hkuY78eHeknkn7LdP</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
-    </item>
-    <item>
-      <title><![CDATA[AI Safety Newsletter #69: Department of War, Anthropic, and National Security]]></title>
-      <link>https://www.lesswrong.com/posts/FrYtSGFupQgLvLuGB/ai-safety-newsletter-69-department-of-war-anthropic-and</link>
-      <description><![CDATA[<p><i><span>Also, An­thropic Re­moves a Core Safety Commitment</span></i></p><p><span>Wel­come to the AI Safety Newslet­ter by the </span><a href="https://safe.ai/"><span>Cen­ter for AI Safety</span></a><span>. We dis­cuss de­vel­op­ments in AI and AI safety. No tech­ni­cal back­ground re­quired....]]></description>
-      <pubDate>Fri, 13 Mar 2026 16:05:47 GMT</pubDate>
-      <guid>FrYtSGFupQgLvLuGB</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
     </item>
     <item>
       <title><![CDATA[MLSN #19: Honesty, Disempowerment, & Cybersecurity]]></title>
@@ -61,40 +34,40 @@
       <source>Newsletter</source>
     </item>
     <item>
-      <title><![CDATA[The Weakest Model in the Selector]]></title>
-      <link>https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector</link>
-      <description><![CDATA[<p>A chain is only as strong un­der ten­sion as its weak­est link, and an AI chat sys­tem is, un­der nor­mal de­sign choices, as se­cure as the weak­est model in the se­lec­tor. While this is rel­a­tively easy to miti­gate, An­thropic is the only chat ser­vice I know of that ac­tu­ally pre­vents ...]]></description>
-      <pubDate>Mon, 29 Dec 2025 06:55:34 GMT</pubDate>
-      <guid>JzLa7ftrPphGahCKt</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
+      <title><![CDATA[MLSN #17: Measuring General AI Abilities and Mitigating Deception]]></title>
+      <link>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</link>
+      <description><![CDATA[Measuring General AI Abilities]]></description>
+      <pubDate>Wed, 19 Nov 2025 20:00:57 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/mlsn-17-measuring-general-ai-abilities</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
     </item>
     <item>
-      <title><![CDATA[In Favor of Inkhaven-But-Less]]></title>
-      <link>https://www.lesswrong.com/posts/kYzYTqmuZtA3bqL3K/in-favor-of-inkhaven-but-less</link>
-      <description><![CDATA[<p>One of the main com­plaints I heard about the <a href="/posts/CA6XfmzYoGFWNhH8e/the-inkhaven-residency">Inkaven Res­i­dency</a> is that it put too much pres­sure on peo­ple to write too quickly. The fel­low­ship was based on the premise that peo­ple who pub­lish ev­ery day have his­tor­i­cally...]]></description>
-      <pubDate>Sat, 13 Dec 2025 23:16:11 GMT</pubDate>
-      <guid>kYzYTqmuZtA3bqL3K</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
+      <title><![CDATA[ML Safety Newsletter #16]]></title>
+      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</link>
+      <description><![CDATA[Automated Forecasting, Pretraining Data Filtering, and Security Red Teaming]]></description>
+      <pubDate>Fri, 12 Sep 2025 16:30:32 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-16</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
     </item>
     <item>
-      <title><![CDATA[Reasons to care about Canary Strings]]></title>
-      <link>https://www.lesswrong.com/posts/QYdNfqfFAeMHXTHkP/reasons-to-care-about-canary-strings</link>
-      <description><![CDATA[<p>This post is a fol­low-up to my <a href="/posts/8uKQyjrAgCcWpfmcs/gemini-3-is-evaluation-paranoid-and-contaminated">re­cent post</a> on eval­u­a­tion para­noia and bench­mark con­tam­i­na­tion in Gem­ini 3. There was a lot of in­ter­est­ing dis­cus­sion about ca­nary strings in the com­ments t...]]></description>
-      <pubDate>Fri, 05 Dec 2025 21:41:34 GMT</pubDate>
-      <guid>QYdNfqfFAeMHXTHkP</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
+      <title><![CDATA[ML Safety Newsletter #15]]></title>
+      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-15</link>
+      <description><![CDATA[Risks in Agentic Computer Use, Goal Drift, Shutdown Resistance, and Critiques of Scheming Research]]></description>
+      <pubDate>Mon, 18 Aug 2025 17:08:04 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-15</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
     </item>
     <item>
-      <title><![CDATA[Slack Observability]]></title>
-      <link>https://www.lesswrong.com/posts/52FMSsLhBGFGhPL7J/slack-observability</link>
-      <description><![CDATA[<p>Once upon a time, I took a park­our class. One day, there was a les­son on how to jump safely, and more im­por­tanty, how to <i>land</i> safely. The in­struc­tor climbed up on top of a tall box and jumped down, bend­ing his knees into a deep squat, ab­sorb­ing the im­pact like a spring.</p><p>...]]></description>
-      <pubDate>Mon, 01 Dec 2025 07:52:59 GMT</pubDate>
-      <guid>52FMSsLhBGFGhPL7J</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
+      <title><![CDATA[ML Safety Newsletter #14]]></title>
+      <link>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</link>
+      <description><![CDATA[Resisting Prompt Injection, Evaluating Cyberattack Capabilities, and SafeBench Winners]]></description>
+      <pubDate>Wed, 07 May 2025 16:02:03 GMT</pubDate>
+      <guid>https://newsletter.mlsafety.org/p/ml-safety-newsletter-14</guid>
+      <category>Newsletter</category>
+      <source>Newsletter</source>
     </item>
   </channel>
 </rss>
