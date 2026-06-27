@@ -9,10 +9,26 @@ I'm Alice, a technical AI safety writer. I write the [ML Safety Newsletter](http
 - [Google Scholar](https://scholar.google.com/citations?user=nemVUsgAAAAJ&hl=en)
 - [LinkedIn](https://linkedin.com/in/alice-blair)
 - [LessWrong](https://www.lesswrong.com/users/alice-blair)
+- [X (@bicellaria)](https://x.com/bicellaria)
 - [Substack](https://substack.com/@aliceblair2)
 - [GitHub](https://github.com/Diatom33)
 
 ## Additional Coverage & Links
+
+### AI Deterrence by Betrayal
+https://aibetrayal.com/
+
+I co-authored a paper examining how advanced AIs are liable to betray their operators, and how this prospect could be used to deter reckless AI development.
+
+### Reducing Political Manipulation with Consistency Training
+https://political-manipulation.ai/
+
+I co-authored a paper observing that language models are currently fairly politically biased and inconsistent, then benchmarking and fixing this political manipulation.
+
+### AI Wellbeing: Measuring and Improving the Functional Pleasure and Pain of AIs
+https://ai-wellbeing.org/
+
+I co-authored a paper introducing the AI Wellbeing Index, which measures functional pleasure and pain across language models and finds wellbeing indicators converge as models scale up.
 
 ### Remote Labor Index: Measuring AI Automation of Remote Work
 https://www.remotelabor.ai/
