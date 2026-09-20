@@ -58,11 +58,3 @@ jobs:
           git commit -m "Update RSS feed - $(date +'%Y-%m-%d %H:%M UTC')"
           git push
         continue-on-error: true
-      
-      - name: Update GitHub Pages (if enabled)
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          keep_files: true
