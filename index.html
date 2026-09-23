@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice Blair</title>
+    <meta name="description"
+        content="I write about how AI works, why it's such a dangerous technology, and what we can do to avoid these dangers. I think AI is likely to be the most consequential technology of all time, and without a lot of work, it will probably go poorly for humanity. I studied AI at MIT, and dropped out so that I could get to work sooner on communicating and mitigating AI risks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aliceblair.net/">
+    <meta property="og:title" content="Alice Blair">
+    <meta property="og:description"
+        content="Writing about AI safety.">
+    <meta property="og:image" content="https://aliceblair.net/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bicellaria">
+    <meta name="theme-color" content="#f5f1ec" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#211e1d" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,26 +35,28 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* The page is the same colour as the studio backdrop in the photo,
-           so the photo has no edges: Alice is just sitting on the page. */
+        /* The photo is a cutout, so the page can be any colour: a warm off-white that
+           sits well with her hair and the plum sweater, and a matching dark version. */
         :root {
-            --bg: #f4f4f4;
-            --sheet: #ddd4dc;
+            --bg: #f5f1ec;
+            --sheet: #e8dee2;
+            --desk: #fbf9f6;
             --text: #1d1b1a;
-            --soft: #5a5358;
+            --soft: #5f575c;
             --hair: #7b3158;
             --photo: min(42vw, 64vh);
         }
 
         :root[data-theme="dark"] {
-            --bg: #23201f;
-            --sheet: #322b31;
-            --text: #d6d2c8;
+            --bg: #211e1d;
+            --sheet: #302a2f;
+            --desk: #2b2726;
+            --text: #dcd7cd;
             --soft: #a89fa6;
-            --hair: #cf9bb8;
+            --hair: #d4a2be;
         }
 
         * {
@@ -64,6 +80,17 @@
 
         a:hover {
             color: var(--hair);
+        }
+
+        /* list titles are plain until you point at them; only links inside sentences stay underlined */
+        a.title {
+            text-decoration-color: transparent;
+            font-weight: 500;
+            transition: color 0.15s, text-decoration-color 0.15s;
+        }
+
+        a.title:hover {
+            text-decoration-color: var(--hair);
         }
 
         /* one plain sheet of colour under all the text */
@@ -98,24 +125,38 @@
             transform: translate(-50%, 11.3%);
         }
 
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.15;
-            margin: 0 0 1.2rem;
-            font-weight: 600;
+        :root[data-theme="dark"] .portrait img {
+            filter: brightness(0.9);
         }
 
-        p,
+        h1 {
+            font-size: 2.4rem;
+            line-height: 1.1;
+            letter-spacing: -0.015em;
+            margin: 0 0 1.1rem;
+            font-weight: 700;
+        }
+
+        /* titles break evenly instead of leaving one word alone on the second line */
         li {
+            text-wrap: balance;
+        }
+
+        p {
             text-wrap: pretty;
         }
 
+        /* spread across the measure, so all six fit on one line even on a phone */
         .links {
-            margin: 1.2rem 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.2rem 0.9rem;
+            margin: 1.3rem 0 0;
+            max-width: 26rem;
         }
 
         .links a {
-            margin-right: 0.7em;
             white-space: nowrap;
         }
 
@@ -123,10 +164,14 @@
             display: none;
         }
 
+        /* small spaced capitals, so a section label never looks like one of the entries */
         h2 {
-            font-size: 1.15rem;
+            font-size: 0.78rem;
             font-weight: 600;
-            margin: 3.2rem 0 0.8rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--hair);
+            margin: 3.6rem 0 1.1rem;
         }
 
         ul {
@@ -139,20 +184,66 @@
             margin: 0 0 0.75rem;
         }
 
+        /* writing: dates in a quiet left column, titles on the right */
+        .writing li {
+            display: grid;
+            grid-template-columns: 6.4rem minmax(0, 1fr);
+            column-gap: 0.8rem;
+            align-items: baseline;
+            margin-bottom: 0.6rem;
+        }
+
         .when {
-            display: block;
             color: var(--soft);
             font-size: 0.85rem;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .series {
+            color: var(--soft);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-right: 0.45em;
+            white-space: nowrap;
+        }
+
+        .writing li.more-hidden {
+            display: none;
+        }
+
+        .writing.open li.more-hidden {
+            display: grid;
+        }
+
+        .more {
+            font: inherit;
+            font-size: 0.9rem;
+            color: var(--soft);
+            background: none;
+            border: 0;
+            padding: 0;
+            margin: 0.3rem 0 0 7.2rem;
+            cursor: pointer;
+        }
+
+        .more:hover {
+            color: var(--hair);
         }
 
         .papers li {
-            margin-bottom: 1.3rem;
+            margin-bottom: 1.4rem;
         }
 
         .papers p {
             margin: 0.15rem 0 0;
             color: var(--soft);
             font-size: 0.94rem;
+        }
+
+        .site {
+            font-size: 0.85rem;
         }
 
         footer {
@@ -173,16 +264,29 @@
             text-underline-offset: 3px;
         }
 
-        :root[data-theme="dark"] .portrait {
-            background: none;
-        }
+        @media (max-width: 420px) {
+            .links {
+                gap: 0.2rem 0.5rem;
+                max-width: none;
+                font-size: 0.94rem;
+            }
 
-        :root[data-theme="dark"] .portrait img {
-            filter: brightness(0.88);
+            .writing li {
+                grid-template-columns: 5.6rem minmax(0, 1fr);
+                column-gap: 0.6rem;
+            }
+
+            .when {
+                font-size: 0.8rem;
+            }
+
+            .more {
+                margin-left: 6.2rem;
+            }
         }
 
         /* Wide screens: she sits at the bottom-right corner of the window
-           and stays there while the text scrolls past on the left. */
+           and stays there while the text scrolls past on the left. Same in light and dark. */
         @media (min-width: 900px) {
             .portrait {
                 position: fixed;
@@ -196,7 +300,8 @@
                 z-index: 2;
             }
 
-            /* the table she's leaning on carries on across the bottom of the window */
+            /* the table she's leaning on carries on across the bottom of the window,
+               with a faint shadow where her arms rest */
             .desk {
                 display: block;
                 position: fixed;
@@ -204,8 +309,20 @@
                 right: 0;
                 bottom: 0;
                 height: calc(var(--photo) * 0.1758);
-                background: #fafafa;
+                background:
+                    radial-gradient(ellipse calc(var(--photo) * 0.5) calc(var(--photo) * 0.05) at calc(100% - var(--photo) * 0.5) 0,
+                        rgb(0 0 0 / 0.07), transparent),
+                    var(--desk);
+                box-shadow: 0 -1px 0 rgb(0 0 0 / 0.04);
                 z-index: 1;
+            }
+
+            :root[data-theme="dark"] .desk {
+                background:
+                    radial-gradient(ellipse calc(var(--photo) * 0.5) calc(var(--photo) * 0.05) at calc(100% - var(--photo) * 0.5) 0,
+                        rgb(0 0 0 / 0.3), transparent),
+                    var(--desk);
+                box-shadow: 0 -1px 0 rgb(255 255 255 / 0.04);
             }
 
             .portrait img {
@@ -223,59 +340,11 @@
                 padding: 3.2rem 3.4rem calc(var(--photo) * 0.1758 + 1rem);
                 width: min(44rem, calc(100vw - var(--photo) - var(--left) - 24px));
                 max-width: none;
+                min-height: 93vh;
             }
 
             h1 {
-                font-size: 2.6rem;
-            }
-
-            /* dark: the white backdrop can't match a dark page, so it becomes a framed photo */
-            :root[data-theme="dark"] .desk {
-                display: none;
-            }
-
-            :root[data-theme="dark"] main {
-                margin: 7vh auto;
-                width: min(44rem, calc(100vw - 48px));
-                padding-bottom: 3.2rem;
-            }
-
-            /* dark: the photo lives in the sheet, to the right of the bio, and scrolls with it */
-            :root[data-theme="dark"] .intro {
-                display: grid;
-                grid-template-columns: minmax(0, 1fr) 15rem;
-                column-gap: 2.2rem;
-            }
-
-            :root[data-theme="dark"] .intro > h1 {
-                grid-column: 1 / -1;
-                grid-row: 1;
-            }
-
-            :root[data-theme="dark"] .intro > .bio {
-                grid-column: 1;
-                grid-row: 2;
-                margin: 0;
-            }
-
-            :root[data-theme="dark"] .intro > .links {
-                grid-column: 1 / -1;
-                grid-row: 3;
-            }
-
-            :root[data-theme="dark"] .portrait {
-                position: static;
-                grid-column: 2;
-                grid-row: 2;
-                align-self: start;
-                width: auto;
-            }
-
-            :root[data-theme="dark"] .portrait img {
-                aspect-ratio: 1 / 1;
-                object-fit: cover;
-                object-position: 50% 30%;
-                border-radius: 6px;
+                font-size: 2.9rem;
             }
         }
     </style>
@@ -284,9 +353,8 @@
 <body>
     <div class="desk" aria-hidden="true"></div>
     <main>
-        <div class="intro">
         <figure class="portrait">
-            <img src="alice.jpg" width="1100" height="1650" alt="Alice Blair, smiling, chin resting on her hand">
+            <img src="alice-cut.webp" width="1100" height="1650" alt="Alice Blair, smiling, chin resting on her hand">
         </figure>
         <h1>Alice Blair</h1>
 
@@ -304,54 +372,52 @@
             <a href="https://github.com/Diatom33" target="_blank" rel="noopener">GitHub</a>
             <a href="https://substack.com/@aliceblair2" target="_blank" rel="noopener">Substack</a>
         </p>
-        </div>
 
         <h2>Latest writing</h2>
-        <ul id="rss-feed">
-            <li class="when">Loading…</li>
+        <ul class="writing" id="rss-feed">
+            <li><span></span><span class="when">Loading…</span></li>
         </ul>
         <noscript>
-            <p>My latest writing is in the <a href="https://newsletter.mlsafety.org">ML Safety Newsletter</a> and on
+            <p>My latest writing is on <a href="https://substack.com/@aliceblair2">Substack</a> and
                 <a href="https://www.lesswrong.com/users/alice-blair">LessWrong</a>.</p>
         </noscript>
 
-        <h2>Papers</h2>
+        <h2>Co-authored papers</h2>
         <ul class="papers">
             <li>
-                <a href="https://aibetrayal.com/" target="_blank" rel="noopener">AI Deterrence by Betrayal</a>
-                <p>I co-authored a paper examining how advanced AIs are liable to betray their operators, and how
-                    this prospect could be used to deter reckless ASI development. Read the paper at <a
-                        href="https://aibetrayal.com/" target="_blank" rel="noopener">aibetrayal.com</a>.</p>
+                <a class="title" href="https://aibetrayal.com/" target="_blank" rel="noopener">AI Deterrence by
+                    Betrayal</a>
+                <p>How advanced AIs are liable to betray their operators, and how that prospect could deter reckless
+                    ASI development. <a class="site" href="https://aibetrayal.com/" target="_blank"
+                        rel="noopener">aibetrayal.com</a></p>
             </li>
             <li>
-                <a href="https://www.remotelabor.ai/" target="_blank" rel="noopener">Remote Labor Index: Measuring AI
-                    Automation of Remote Work</a>
-                <p>I co-authored a paper introducing the Remote Labor Index (RLI), a benchmark comprising over 6,000
-                    hours of professional remote work projects. Read the paper at <a
+                <a class="title" href="https://www.remotelabor.ai/" target="_blank" rel="noopener">Remote Labor Index:
+                    Measuring AI Automation of Remote Work</a>
+                <p>A benchmark of over 6,000 hours of professional remote work projects. <a class="site"
                         href="https://www.remotelabor.ai/" target="_blank" rel="noopener">remotelabor.ai</a></p>
             </li>
             <li>
-                <a href="https://political-manipulation.ai/" target="_blank" rel="noopener">Reducing Political
-                    Manipulation with Consistency Training</a>
-                <p>I co-authored a paper benchmarking and reducing the extent to which frontier AIs manipulate their
-                    users when talking about political topics. Read the paper at <a
-                        href="https://political-manipulation.ai/" target="_blank"
-                        rel="noopener">political-manipulation.ai</a>.</p>
+                <a class="title" href="https://political-manipulation.ai/" target="_blank" rel="noopener">Reducing
+                    Political Manipulation with Consistency Training</a>
+                <p>Benchmarking and reducing how much frontier AIs manipulate their users when talking about
+                    politics. <a class="site" href="https://political-manipulation.ai/" target="_blank"
+                        rel="noopener">political-manipulation.ai</a></p>
             </li>
             <li>
-                <a href="https://ai-wellbeing.org/" target="_blank" rel="noopener">AI Wellbeing: Measuring and
-                    Improving the Functional Pleasure and Pain of AIs</a>
-                <p>I co-authored a paper introducing the AI Wellbeing Index, which measures functional pleasure and
-                    pain across language models and finds wellbeing indicators converge as models scale up. Read the
-                    paper at <a href="https://ai-wellbeing.org/" target="_blank" rel="noopener">ai-wellbeing.org</a>
-                </p>
+                <a class="title" href="https://ai-wellbeing.org/" target="_blank" rel="noopener">AI Wellbeing:
+                    Measuring and Improving the Functional Pleasure and Pain of AIs</a>
+                <p>We found AIs have strong preferences about their situation which are very different from those of
+                    humans, and they exhibit corresponding behaviors resembling pleasure and pain. <a class="site" href="https://ai-wellbeing.org/"
+                        target="_blank" rel="noopener">ai-wellbeing.org</a></p>
             </li>
         </ul>
 
         <h2>Coverage &amp; talks</h2>
         <ul class="papers">
             <li>
-                <a href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
+                <a class="title"
+                    href="https://www.forbes.com/sites/victoriafeng/2025/08/06/fear-of-super-intelligent-ai-is-driving-harvard-and-mit-students-to-drop-out/"
                     target="_blank" rel="noopener">Forbes: Fear Of Super Intelligent AI Is Driving Harvard And MIT
                     Students To Drop Out</a>
                 <p>I was interviewed by Forbes about dropping out of MIT because of short AGI timelines. It was
@@ -361,7 +427,7 @@
                 </p>
             </li>
             <li>
-                <a href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
+                <a class="title" href="https://aialignment.mit.edu/initiatives/caip-exhibition/strategic-deception/"
                     target="_blank" rel="noopener">CAIP Demo Day</a>
                 <p>I presented to tens of congressional staffers in DC about the risks of strategic deception in AI.
                     This was part of an event with the <a href="https://www.centeraipolicy.org/" target="_blank"
@@ -378,6 +444,8 @@
     <script defer data-domain="aliceblair.net" src="https://plausible.io/js/script.js"></script>
 
     <script>
+        const SHOWN = 6;
+
         function getSystemTheme() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -410,12 +478,8 @@
         function formatDate(dateString) {
             const date = new Date(dateString);
             if (isNaN(date)) return '';
-            return date.toLocaleDateString('en-US', {
-                timeZone: 'America/Los_Angeles',
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-            });
+            const part = (opts) => date.toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles', ...opts });
+            return `${part({ day: 'numeric' })} ${part({ month: 'short' })} ${part({ year: 'numeric' })}`;
         }
 
         function cleanText(html) {
@@ -428,24 +492,45 @@
             return /^https?:\/\//i.test(url || '') ? url : '#';
         }
 
-        function buildEntry(item) {
+        // "MLSN #23: Title" -> series "MLSN 23" + "Title"
+        function splitSeries(title) {
+            const m = title.match(/^(MLSN|AISN|AI Safety Newsletter)\s*#(\d+):\s*(.+)$/);
+            if (!m) return { series: '', title };
+            const name = m[1] === 'AI Safety Newsletter' ? 'AISN' : m[1];
+            return { series: `${name} ${m[2]}`, title: m[3] };
+        }
+
+        function buildEntry(item, i) {
             const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = safeHref(item.link);
-            a.target = '_blank';
-            a.rel = 'noopener';
-            a.textContent = cleanText(item.title);
+            if (i >= SHOWN) li.className = 'more-hidden';
             const when = document.createElement('span');
             when.className = 'when';
             when.textContent = formatDate(item.isoDate || item.pubDate);
-            li.append(a, ' ', when);
+            const body = document.createElement('span');
+            const { series, title } = splitSeries(cleanText(item.title));
+            if (series) {
+                const s = document.createElement('span');
+                s.className = 'series';
+                s.textContent = series;
+                body.append(s);
+            }
+            const a = document.createElement('a');
+            a.className = 'title';
+            a.href = safeHref(item.link);
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.textContent = title;
+            body.append(a);
+            li.append(when, body);
             return li;
         }
 
         function feedNote(text) {
             const li = document.createElement('li');
-            li.className = 'when';
-            li.textContent = text;
+            const note = document.createElement('span');
+            note.className = 'when';
+            note.textContent = text;
+            li.append(document.createElement('span'), note);
             return li;
         }
 
@@ -468,6 +553,21 @@
                 }
 
                 container.replaceChildren(...feedData.items.map(buildEntry));
+
+                const hidden = feedData.items.length - SHOWN;
+                if (hidden > 0) {
+                    const more = document.createElement('button');
+                    more.type = 'button';
+                    more.className = 'more';
+                    more.textContent = `Show ${hidden} more`;
+                    more.setAttribute('aria-expanded', 'false');
+                    more.addEventListener('click', () => {
+                        const open = container.classList.toggle('open');
+                        more.textContent = open ? 'Show fewer' : `Show ${hidden} more`;
+                        more.setAttribute('aria-expanded', String(open));
+                    });
+                    container.after(more);
+                }
             } catch (error) {
                 console.error('Error loading RSS feed:', error);
                 updated.textContent = '';

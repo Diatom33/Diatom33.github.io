@@ -25,7 +25,9 @@ No build process required - direct HTML/CSS/JavaScript served by GitHub Pages.
 
 ### Core Files
 - **index.html**: Main portfolio page with embedded CSS/JavaScript
-- **alice.jpg**: Portrait photo (1100x1650, studio backdrop `#f4f4f4`, which the light theme's page colour matches)
+- **alice-cut.webp**: Portrait photo cut out on a transparent background (1100x1650), used in both themes
+- **og.jpg**: 1200x630 link-preview image (Open Graph / Twitter card)
+- **favicon.svg / favicon.ico / apple-touch-icon.png**: Plum "AB" icon
 - **scripts/update-feed.js**: RSS aggregation script (Node.js)
 - **data/feed.json**: Generated RSS feed data consumed by frontend
 - **data/feed.xml**: Generated RSS XML feed
@@ -36,7 +38,7 @@ No build process required - direct HTML/CSS/JavaScript served by GitHub Pages.
 - Transforms GreaterWrong links to LessWrong equivalents
 - Cleans post titles (removes "by Alice Blair" suffix)
 - Applies date filtering for Newsletter posts (after May 1, 2025)
-- Frontend consumes JSON data and shows titles + dates only; on failure it shows a short "unavailable" note
+- Frontend consumes JSON data and shows dates + titles (series prefix like "MLSN 23" split out), newest 6 with a "Show more" button; on failure it shows a short "unavailable" note
 
 ### Theme System
 - CSS custom properties for light/dark themes, set via `data-theme` on `<html>` before first paint
