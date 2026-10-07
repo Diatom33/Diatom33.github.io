@@ -1,6 +1,6 @@
 # Alice Blair
 
-I write about how AI works, why it's such a dangerous technology, and what we can do to avoid these dangers. I think AI is likely to be the most consequential technology of all time, and without a lot of work, it will probably go poorly for humanity. I studied AI at MIT, and dropped out so that I could get to work sooner on communicating and mitigating AI risks.
+I write about how AI works, why it's such a dangerous technology, and what we can do to avoid these dangers. I think AI is likely to be the most consequential technology of all time, and without a lot of work, it will probably go poorly for humanity. I studied AI at MIT, and dropped out so that I could get to work sooner on communicating and mitigating AI risks. I'm the writing lead at the [Nightingale Collective](https://nightingalecollective.org).
 
 ## Links
 
