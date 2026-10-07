@@ -441,7 +441,21 @@
         </footer>
     </main>
 
-    <script defer data-domain="aliceblair.net" src="https://plausible.io/js/script.js"></script>
+    <!-- GoatCounter Analytics - no cookies, no personal data. Dashboard: https://aliceblair.goatcounter.com -->
+    <script data-goatcounter="https://aliceblair.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    <script>
+        // Count outbound link clicks as GoatCounter events (delegated, so feed links are covered too)
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href]');
+            if (!link || link.host === location.host || !window.goatcounter?.count) return;
+            window.goatcounter.count({
+                path: link.href,
+                title: link.textContent.trim().slice(0, 100),
+                event: true,
+            });
+        });
+    </script>
 
     <script>
         const SHOWN = 6;
