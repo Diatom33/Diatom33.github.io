@@ -2,7 +2,7 @@
   "meta": {
     "title": "Merged RSS Feed",
     "description": "Combined feed from multiple sources",
-    "lastUpdated": "2026-11-06T22:41:35.754Z",
+    "lastUpdated": "2026-11-13T00:53:19.953Z",
     "totalItems": 10,
     "sources": [
       {
@@ -20,11 +20,28 @@
         "category": "Newsletter",
         "name": "Newsletter",
         "dateFilter": "2025-05-01T00:00:00.000Z"
+      },
+      {
+        "title": "Manual items",
+        "name": "Manual",
+        "category": "Manual"
       }
     ],
     "generatedBy": "GitHub Actions RSS Merger"
   },
   "items": [
+    {
+      "title": "Rogue Agent Incident Dashboard",
+      "link": "https://nightingalecollective.org/incidents/",
+      "description": "",
+      "pubDate": "Thu, 12 Nov 2026 20:00:00 GMT",
+      "isoDate": "2026-11-12T20:00:00.000Z",
+      "author": "Alice Blair",
+      "guid": "https://nightingalecollective.org/incidents/",
+      "category": "Manual",
+      "source": "Manual",
+      "feedTitle": "Manual items"
+    },
     {
       "title": "MLSN #23: AIs Leak Their Values Into Factual Questions",
       "link": "https://newsletter.mlsafety.org/p/mlsn-23-ais-leak-their-values-into",
@@ -132,18 +149,6 @@
       "category": "Newsletter",
       "source": "Newsletter",
       "feedTitle": "ML Safety Newsletter"
-    },
-    {
-      "title": "The Weakest Model in the Selector",
-      "link": "https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector",
-      "description": "<p>A chain is only as strong un­der ten­sion as its weak­est link, and an AI chat sys­tem is, un­der nor­mal de­sign choices, as se­cure as the weak­est model in the se­lec­tor. While this is rel­a­tively easy to miti­gate, An­thropic is the only chat ser­vice I know of that ac­tu­ally pre­vents ...",
-      "pubDate": "Mon, 29 Dec 2025 06:55:34 +0000",
-      "isoDate": "2025-12-29T06:55:34.000Z",
-      "author": "Alice Blair",
-      "guid": "JzLa7ftrPphGahCKt",
-      "category": "LessWrong",
-      "source": "LessWrong",
-      "feedTitle": "Alice Blair's Posts - LessWrong 2.0 viewer"
     }
   ]
 }

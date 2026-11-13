@@ -38,6 +38,8 @@ No build process required - direct HTML/CSS/JavaScript served by GitHub Pages.
 - Transforms GreaterWrong links to LessWrong equivalents
 - Cleans post titles (removes "by Alice Blair" suffix)
 - Applies date filtering for Newsletter posts (after May 1, 2025)
+- Merges in hand-added items from `data/manual-items.json` (writing that has no RSS feed; each entry
+  needs `title`, `link`, `isoDate`), sorted by date with everything else. Edit that file, not feed.json
 - Frontend consumes JSON data and shows dates + titles (series prefix like "MLSN 23" split out), newest 6 with a "Show more" button; on failure it shows a short "unavailable" note
 
 ### Theme System

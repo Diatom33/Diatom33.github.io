@@ -3,9 +3,18 @@
   <channel>
     <title>Merged RSS Feed</title>
     <description>Combined feed from multiple sources</description>
-    <lastBuildDate>Fri, 06 Nov 2026 22:41:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:53:19 GMT</lastBuildDate>
     <generator>GitHub Actions RSS Merger</generator>
     
+    <item>
+      <title><![CDATA[Rogue Agent Incident Dashboard]]></title>
+      <link>https://nightingalecollective.org/incidents/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:00:00 GMT</pubDate>
+      <guid>https://nightingalecollective.org/incidents/</guid>
+      <category>Manual</category>
+      <source>Manual</source>
+    </item>
     <item>
       <title><![CDATA[MLSN #23: AIs Leak Their Values Into Factual Questions]]></title>
       <link>https://newsletter.mlsafety.org/p/mlsn-23-ais-leak-their-values-into</link>
@@ -86,15 +95,6 @@
       <guid>https://newsletter.mlsafety.org/p/mlsn-18-adversarial-diffusion-activation</guid>
       <category>Newsletter</category>
       <source>Newsletter</source>
-    </item>
-    <item>
-      <title><![CDATA[The Weakest Model in the Selector]]></title>
-      <link>https://www.lesswrong.com/posts/JzLa7ftrPphGahCKt/the-weakest-model-in-the-selector</link>
-      <description><![CDATA[<p>A chain is only as strong un­der ten­sion as its weak­est link, and an AI chat sys­tem is, un­der nor­mal de­sign choices, as se­cure as the weak­est model in the se­lec­tor. While this is rel­a­tively easy to miti­gate, An­thropic is the only chat ser­vice I know of that ac­tu­ally pre­vents ...]]></description>
-      <pubDate>Mon, 29 Dec 2025 06:55:34 GMT</pubDate>
-      <guid>JzLa7ftrPphGahCKt</guid>
-      <category>LessWrong</category>
-      <source>LessWrong</source>
     </item>
   </channel>
 </rss>

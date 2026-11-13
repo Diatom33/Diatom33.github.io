@@ -28,6 +28,7 @@ const RSS_FEEDS = [
 const MAX_ITEMS = parseInt(process.env.MAX_ITEMS) || 10;
 const OUTPUT_DIR = 'data';
 const OUTPUT_FILE = 'feed.json';
+const MANUAL_ITEMS_FILE = 'data/manual-items.json';
 
 // Ensure data directory exists
 async function ensureDataDirectory() {
@@ -170,6 +171,37 @@ async function fetchFeed(feedConfig) {
     }
 }
 
+// Load hand-added items (writing that isn't in any RSS feed) from data/manual-items.json.
+// Each entry needs title, link and isoDate; description is optional.
+async function loadManualItems() {
+    const feedInfo = { title: 'Manual items', name: 'Manual', category: 'Manual' };
+    try {
+        if (!await fs.pathExists(MANUAL_ITEMS_FILE)) {
+            return { feedInfo, items: [] };
+        }
+        const entries = await fs.readJson(MANUAL_ITEMS_FILE);
+        console.log(`Loaded ${entries.length} manual items`);
+        return {
+            feedInfo,
+            items: entries.map(e => ({
+                title: e.title,
+                link: e.link,
+                description: e.description || '',
+                pubDate: new Date(e.isoDate).toUTCString(),
+                isoDate: e.isoDate,
+                author: e.author || 'Alice Blair',
+                guid: e.link,
+                category: 'Manual',
+                source: 'Manual',
+                feedTitle: 'Manual items'
+            }))
+        };
+    } catch (error) {
+        console.error('Error loading manual items:', error.message);
+        return { feedInfo, items: [] };
+    }
+}
+
 // Fetch all RSS feeds
 async function fetchAllFeeds() {
     console.log('Starting RSS feed fetch...');
@@ -198,6 +230,8 @@ async function fetchAllFeeds() {
             }
         });
     }
+
+    feedResults.push(await loadManualItems());
 
     return feedResults;
 }
